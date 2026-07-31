@@ -64,10 +64,17 @@ export function Glossary() {
     });
   }
 
-  if (!all.length && !editing) {
+  if (!editing) {
     return (
       <section className="section state-msg">
-        <p>Nessuna voce nel glossario.</p>
+        <p>
+          Il glossario si gestisce in modalità modifica — tocca "Modifica" nel menu, poi torna qui per
+          aggiungere o modificare le voci. Per leggere una definizione, tocca il termine sottolineato ovunque
+          appaia in una ricetta.
+        </p>
+        <Link to="/" className="btn btn-outline">
+          Torna all'indice
+        </Link>
       </section>
     );
   }

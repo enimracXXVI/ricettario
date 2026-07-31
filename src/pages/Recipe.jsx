@@ -131,7 +131,7 @@ export function Recipe() {
     if (!el) return;
     const entry = findGlossaryEntry(el.dataset.term, data.recipes);
     if (!entry) return;
-    showGlossaryTerm(entry, el.getBoundingClientRect());
+    showGlossaryTerm(entry, el.getBoundingClientRect(), true);
   }
   function hoverInGloss(e) {
     if (!CAN_HOVER) return;
@@ -139,7 +139,7 @@ export function Recipe() {
     if (!el) return;
     const entry = findGlossaryEntry(el.dataset.term, data.recipes);
     if (!entry) return;
-    showGlossaryTerm(entry, el.getBoundingClientRect());
+    showGlossaryTerm(entry, el.getBoundingClientRect(), false);
   }
   function hoverOutGloss(e) {
     if (!CAN_HOVER) return;

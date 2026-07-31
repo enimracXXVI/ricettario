@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { emptyRecipe, getCatOrder, newRecipeId } from '../lib/util';
 import { useEscapeToClose } from '../lib/useEscapeToClose';
+import { useBodyScrollLock } from '../lib/useBodyScrollLock';
 
 const NEW_CAT = '__new__';
 
@@ -14,6 +15,7 @@ export function NewRecipeModal({ open, onClose, onCreated }) {
   const [error, setError] = useState('');
 
   useEscapeToClose(open, onClose);
+  useBodyScrollLock(open);
 
   useEffect(() => {
     if (open) {

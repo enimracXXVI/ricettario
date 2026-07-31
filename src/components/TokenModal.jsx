@@ -3,6 +3,7 @@ import QRCode from 'qrcode';
 import { useApp } from '../context/AppContext';
 import { REPO_NAME, REPO_OWNER } from '../config';
 import { useEscapeToClose } from '../lib/useEscapeToClose';
+import { useBodyScrollLock } from '../lib/useBodyScrollLock';
 
 export function TokenModal({ open, onClose }) {
   const { hasToken, token, checkAndStoreToken, clearToken, showToast } = useApp();
@@ -10,21 +11,11 @@ export function TokenModal({ open, onClose }) {
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState('');
   const [qrUrl, setQrUrl] = useState(null);
-  const [pasteError, setPasteError] = useState('');
 
   useEscapeToClose(open, onClose);
+  useBodyScrollLock(open);
 
   if (!open) return null;
-
-  async function handlePaste() {
-    setPasteError('');
-    try {
-      const text = await navigator.clipboard.readText();
-      if (text) setValue(text.trim());
-    } catch {
-      setPasteError('Impossibile leggere gli appunti — incolla manualmente nel campo.');
-    }
-  }
 
   async function handleSave() {
     const v = value.trim();
@@ -83,7 +74,7 @@ export function TokenModal({ open, onClose }) {
                 <img src={qrUrl} alt="QR del token" width={240} height={240} style={{ borderRadius: 10 }} />
                 <p style={{ fontSize: 11, color: 'var(--muted)', marginTop: 8 }}>
                   Inquadra con la fotocamera dell'altro dispositivo: di solito propone di copiare il testo — poi
-                  incollalo qui sotto con "Incolla". Non condividere questo QR pubblicamente.
+                  tienilo premuto sul campo qui sotto e scegli "Incolla". Non condividere questo QR pubblicamente.
                 </p>
               </div>
             )}
@@ -94,22 +85,16 @@ export function TokenModal({ open, onClose }) {
           <label className="modal-label" htmlFor="gh-token">
             {hasToken ? 'Sostituisci token' : 'Nuovo token'}
           </label>
-          <div style={{ display: 'flex', gap: 8 }}>
-            <input
-              id="gh-token"
-              type="password"
-              autoComplete="off"
-              className="modal-input"
-              placeholder="github_pat_…"
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' && handleSave()}
-            />
-            <button type="button" className="btn btn-outline" style={{ flexShrink: 0 }} onClick={handlePaste}>
-              Incolla
-            </button>
-          </div>
-          {pasteError && <div className="modal-error">{pasteError}</div>}
+          <input
+            id="gh-token"
+            type="password"
+            autoComplete="off"
+            className="modal-input"
+            placeholder="github_pat_… (tieni premuto per incollare)"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && handleSave()}
+          />
         </div>
         {error && <div className="modal-error">{error}</div>}
         <div className="modal-actions">

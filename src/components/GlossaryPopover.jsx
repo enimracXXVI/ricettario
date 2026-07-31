@@ -1,11 +1,15 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
+import { useBodyScrollLock } from '../lib/useBodyScrollLock';
 
 export function GlossaryPopover() {
-  const { glossaryPopup, hideGlossaryTerm } = useApp();
+  const { glossaryPopup, hideGlossaryTerm, editing } = useApp();
   const navigate = useNavigate();
   const boxRef = useRef(null);
+
+  const pinned = !!(glossaryPopup && glossaryPopup.pinned);
+  useBodyScrollLock(pinned);
 
   useEffect(() => {
     if (!glossaryPopup) return;
@@ -15,6 +19,18 @@ export function GlossaryPopover() {
     document.addEventListener('keydown', onKeyDown);
     return () => document.removeEventListener('keydown', onKeyDown);
   }, [glossaryPopup, hideGlossaryTerm]);
+
+  // A hover preview (not pinned) is anchored to a term's on-screen position at
+  // open time; if the page scrolls it would drift away from that term, so just
+  // dismiss it instead of trying to keep it glued to a moving target.
+  useEffect(() => {
+    if (!glossaryPopup || pinned) return;
+    function onScroll() {
+      hideGlossaryTerm();
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [glossaryPopup, pinned, hideGlossaryTerm]);
 
   if (!glossaryPopup) return null;
 
@@ -59,16 +75,18 @@ export function GlossaryPopover() {
           </div>
         )}
         <div className="gloss-popover-actions">
-          <button
-            type="button"
-            className="btn btn-ghost"
-            onClick={() => {
-              hideGlossaryTerm();
-              navigate('/glossario', { state: { term } });
-            }}
-          >
-            Vai al glossario →
-          </button>
+          {editing && (
+            <button
+              type="button"
+              className="btn btn-ghost"
+              onClick={() => {
+                hideGlossaryTerm();
+                navigate('/glossario', { state: { term } });
+              }}
+            >
+              Modifica nel glossario →
+            </button>
+          )}
           <button type="button" className="btn btn-outline" onClick={hideGlossaryTerm}>
             Chiudi
           </button>

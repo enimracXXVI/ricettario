@@ -3,16 +3,20 @@ import { createPortal } from 'react-dom';
 import { NavLink } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { useEscapeToClose } from '../lib/useEscapeToClose';
+import { useBodyScrollLock } from '../lib/useBodyScrollLock';
 
 function NavLinks({ onNavigate }) {
+  const { editing } = useApp();
   return (
     <div className="nav-links">
       <NavLink to="/" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`} onClick={onNavigate} end>
         Indice
       </NavLink>
-      <NavLink to="/glossario" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`} onClick={onNavigate}>
-        Glossario
-      </NavLink>
+      {editing && (
+        <NavLink to="/glossario" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`} onClick={onNavigate}>
+          Glossario
+        </NavLink>
+      )}
     </div>
   );
 }
@@ -82,6 +86,7 @@ export function NavBar({ onNewRecipe, onOpenSettings }) {
   const close = () => setOpen(false);
 
   useEscapeToClose(open, close);
+  useBodyScrollLock(open);
 
   return (
     <nav className="topnav">

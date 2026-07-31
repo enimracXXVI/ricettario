@@ -204,7 +204,7 @@ export function AppProvider({ children }) {
       restoreDraft,
       discardDraft,
       glossaryPopup,
-      showGlossaryTerm: (entry, rect) => setGlossaryPopup({ ...entry, rect }),
+      showGlossaryTerm: (entry, rect, pinned) => setGlossaryPopup({ ...entry, rect, pinned }),
       hideGlossaryTerm: () => setGlossaryPopup(null),
     }),
     [
