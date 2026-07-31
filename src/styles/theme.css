@@ -531,12 +531,13 @@ button {
 }
 
 .enjoy-sep {
-  text-align: center;
+  text-align: right;
   padding: 26px 0 8px;
 }
 .enjoy-emoji {
   font-size: 16px;
   opacity: 0.4;
+  user-select: none;
 }
 
 .state-msg {
@@ -544,9 +545,10 @@ button {
   text-align: center;
   color: var(--muted);
   font-size: 14px;
-}
-.state-msg .btn {
-  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
 }
 
 .banner {

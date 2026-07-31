@@ -60,20 +60,41 @@
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Mobile: a vertical column docked to the right edge instead of a horizontal
+   bottom bar — a horizontal row of 12 controls on a narrow screen forced
+   every button to be tiny; stacking them lets each one be a proper 48px+
+   tap target, at the cost of possibly needing to scroll the column. */
 @media (max-width: 759px) {
   #fmt-toolbar {
-    left: 0 !important;
-    right: 0;
-    bottom: 0;
-    top: auto !important;
+    left: auto !important;
+    right: 8px;
+    top: 50% !important;
+    bottom: auto;
+    transform: translateY(-50%);
+    flex-direction: column;
+    width: 56px;
+    max-width: 56px;
+    max-height: 82vh;
+    overflow-y: auto;
+    overflow-x: visible;
+    padding: 8px 6px;
+    gap: 4px;
+  }
+  .fmt-btn {
     width: 100%;
-    max-width: 100%;
-    border-radius: 14px 14px 0 0;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    padding: 8px 10px calc(8px + var(--safe-b));
-    justify-content: flex-start;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 15px;
+  }
+  .fmt-sep {
+    width: 28px;
+    height: 1px;
+    margin: 3px auto;
+  }
+  .fmt-swatch {
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
   }
 }
 
@@ -98,10 +119,12 @@
 @media (max-width: 759px) {
   #fmt-link-panel {
     left: 8px !important;
-    right: 8px;
-    bottom: calc(64px + var(--safe-b)) !important;
-    top: auto !important;
+    right: 72px;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%);
     width: auto;
+    max-height: 70vh;
   }
 }
 .fmt-url-input {

@@ -23,7 +23,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Smoothie",
+          "value": "Smoothie & Bevande",
           "isCat": true
         }
       ],
@@ -106,7 +106,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Dolci",
+          "value": "Dolci & Dessert",
           "isCat": true
         }
       ],
@@ -168,7 +168,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Dolci",
+          "value": "Dolci & Dessert",
           "isCat": true
         }
       ],
@@ -234,7 +234,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Smoothie",
+          "value": "Smoothie & Bevande",
           "isCat": true
         }
       ],
@@ -294,7 +294,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Dolci",
+          "value": "Dolci & Dessert",
           "isCat": true
         }
       ],
@@ -473,7 +473,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Smoothie",
+          "value": "Smoothie & Bevande",
           "isCat": true
         }
       ],
@@ -556,7 +556,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Smoothie",
+          "value": "Smoothie & Bevande",
           "isCat": true
         }
       ],
@@ -821,7 +821,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Base",
+          "value": "Preparazioni di base",
           "isCat": true
         }
       ],
@@ -964,7 +964,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Dolci",
+          "value": "Dolci & Dessert",
           "isCat": true
         }
       ],
@@ -1114,7 +1114,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Preparazioni",
+          "value": "Preparazioni di base",
           "isCat": true
         }
       ],
@@ -1934,7 +1934,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Preparazioni",
+          "value": "Preparazioni di base",
           "isCat": true
         }
       ],
@@ -2443,7 +2443,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Dolci",
+          "value": "Dolci & Dessert",
           "isCat": true
         }
       ],
@@ -2519,7 +2519,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Dolci",
+          "value": "Colazione",
           "isCat": true
         }
       ],
@@ -2818,7 +2818,7 @@
         },
         {
           "label": "Categoria",
-          "value": "Secondi",
+          "value": "Zuppe",
           "isCat": true
         }
       ],

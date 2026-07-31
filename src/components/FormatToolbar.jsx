@@ -138,14 +138,23 @@ export function FormatToolbar() {
       const sel = window.getSelection();
       if (!sel || !sel.rangeCount) return;
       const range = sel.getRangeAt(0);
+      if (range.collapsed) return;
+      const frag = range.extractContents();
+      // Strip any color already applied within the selection first — otherwise
+      // re-picking a color on already-colored text nests spans instead of
+      // replacing the color, which looked like "you have to clear formatting
+      // before you can change the color".
+      frag.querySelectorAll('*').forEach((el) => {
+        if (el.style && el.style.color) el.style.removeProperty('color');
+      });
+      if (color === 'reset') {
+        range.insertNode(frag);
+        return;
+      }
       const span = document.createElement('span');
       span.style.color = color;
-      try {
-        range.surroundContents(span);
-      } catch {
-        span.appendChild(range.extractContents());
-        range.insertNode(span);
-      }
+      span.appendChild(frag);
+      range.insertNode(span);
     },
     [restoreRange]
   );

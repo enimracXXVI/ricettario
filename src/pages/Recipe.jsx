@@ -196,9 +196,7 @@ export function Recipe() {
         {editing ? (
           <input className="author-input" value={recipe.author} onChange={(e) => updateField('author', e.target.value)} />
         ) : (
-          <span className={`author-span${hasAuthor ? ' has-author' : ''}`} style={{ borderBottom: hasAuthor ? 'none' : '1px solid rgba(2,178,251,.35)', minWidth: 80, textAlign: 'right' }}>
-            {recipe.author}
-          </span>
+          <span className={`author-span${hasAuthor ? ' has-author' : ''}`}>{recipe.author}</span>
         )}
       </p>
 
@@ -410,16 +408,7 @@ export function Recipe() {
       ) : null}
 
       <div className="enjoy-sep">
-        {editing ? (
-          <input
-            className="chip-val-input"
-            style={{ display: 'inline', width: 80, textAlign: 'center' }}
-            value={recipe.enjoy}
-            onChange={(e) => updateField('enjoy', e.target.value)}
-          />
-        ) : (
-          <span className="enjoy-emoji">{recipe.enjoy}</span>
-        )}
+        <span className="enjoy-emoji">{recipe.enjoy || '💙💜'}</span>
       </div>
 
       <div className="recipe-pager">

@@ -165,14 +165,29 @@ body.light .cat-entry {
   outline: none;
   border-bottom-color: var(--cyan);
 }
+.author-span {
+  border-bottom: 1px solid rgba(2, 178, 251, 0.35);
+  min-width: 80px;
+  text-align: right;
+}
+.author-span.has-author {
+  color: var(--cyan);
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  border-bottom-color: transparent;
+}
 
-/* ── META CHIPS ── */
+/* ── META CHIPS ──
+   Grid (not flex) so every chip in a row shares the same column width —
+   flex + min-width only set a floor, so short values (e.g. a category
+   label) ended up visibly narrower than longer ones (e.g. "59 sec"). */
 .meta-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
   gap: 10px;
   margin-bottom: 40px;
-  align-items: flex-start;
 }
 .chip {
   background: var(--card);
@@ -185,7 +200,7 @@ body.light .cat-entry {
   justify-content: center;
   text-align: center;
   gap: 5px;
-  min-width: 92px;
+  width: 100%;
   position: relative;
   transition: background 0.25s;
 }
@@ -195,6 +210,8 @@ body.light .cat-entry {
   border: none;
   text-align: center;
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .chip-label,
 .chip-label-input {

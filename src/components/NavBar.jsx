@@ -13,9 +13,14 @@ function NavLinks({ onNavigate }) {
         Indice
       </NavLink>
       {editing && (
-        <NavLink to="/glossario" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`} onClick={onNavigate}>
-          Glossario
-        </NavLink>
+        <>
+          <NavLink to="/glossario" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`} onClick={onNavigate}>
+            Glossario
+          </NavLink>
+          <a href={`${import.meta.env.BASE_URL}styleguide.html`} target="_blank" rel="noopener noreferrer" className="nav-link">
+            Guida di stile ↗
+          </a>
+        </>
       )}
     </div>
   );
