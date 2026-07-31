@@ -1,17 +1,30 @@
 import { useState } from 'react';
+import QRCode from 'qrcode';
 import { useApp } from '../context/AppContext';
 import { REPO_NAME, REPO_OWNER } from '../config';
 import { useEscapeToClose } from '../lib/useEscapeToClose';
 
 export function TokenModal({ open, onClose }) {
-  const { hasToken, checkAndStoreToken, clearToken, showToast } = useApp();
+  const { hasToken, token, checkAndStoreToken, clearToken, showToast } = useApp();
   const [value, setValue] = useState('');
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState('');
+  const [qrUrl, setQrUrl] = useState(null);
+  const [pasteError, setPasteError] = useState('');
 
   useEscapeToClose(open, onClose);
 
   if (!open) return null;
+
+  async function handlePaste() {
+    setPasteError('');
+    try {
+      const text = await navigator.clipboard.readText();
+      if (text) setValue(text.trim());
+    } catch {
+      setPasteError('Impossibile leggere gli appunti — incolla manualmente nel campo.');
+    }
+  }
 
   async function handleSave() {
     const v = value.trim();
@@ -34,13 +47,22 @@ export function TokenModal({ open, onClose }) {
     }
   }
 
+  async function handleShowQr() {
+    if (qrUrl) {
+      setQrUrl(null);
+      return;
+    }
+    const url = await QRCode.toDataURL(token, { margin: 1, width: 240 });
+    setQrUrl(url);
+  }
+
   return (
     <div className="modal-overlay open" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
       <div className="modal-box">
         <div className="modal-title">Accesso a GitHub</div>
         <p className="modal-help">
           Per salvare le modifiche serve un Personal Access Token (fine-grained) con accesso in scrittura al solo
-          repository <strong>{REPO_OWNER}/{REPO_NAME}</strong>. Va incollato una volta per dispositivo/browser — resta
+          repository <strong>{REPO_OWNER}/{REPO_NAME}</strong>. Va aggiunto una volta per dispositivo/browser — resta
           salvato solo in locale.
           <br />
           <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">
@@ -48,26 +70,46 @@ export function TokenModal({ open, onClose }) {
           </a>{' '}
           (permesso richiesto: <em>Contents: Read and write</em>, limitato a questo repository).
         </p>
+
         {hasToken && (
           <div className="modal-field">
             <span className="modal-label">Stato attuale</span>
-            <p style={{ fontSize: 13 }}>Un token è già salvato su questo dispositivo.</p>
+            <p style={{ fontSize: 13, marginBottom: 10 }}>Un token è già salvato su questo dispositivo.</p>
+            <button type="button" className="btn btn-outline btn-block" onClick={handleShowQr}>
+              {qrUrl ? 'Nascondi QR' : 'Mostra come QR per un altro dispositivo'}
+            </button>
+            {qrUrl && (
+              <div style={{ textAlign: 'center', marginTop: 12 }}>
+                <img src={qrUrl} alt="QR del token" width={240} height={240} style={{ borderRadius: 10 }} />
+                <p style={{ fontSize: 11, color: 'var(--muted)', marginTop: 8 }}>
+                  Inquadra con la fotocamera dell'altro dispositivo: di solito propone di copiare il testo — poi
+                  incollalo qui sotto con "Incolla". Non condividere questo QR pubblicamente.
+                </p>
+              </div>
+            )}
           </div>
         )}
+
         <div className="modal-field">
           <label className="modal-label" htmlFor="gh-token">
-            Nuovo token
+            {hasToken ? 'Sostituisci token' : 'Nuovo token'}
           </label>
-          <input
-            id="gh-token"
-            type="password"
-            autoComplete="off"
-            className="modal-input"
-            placeholder="github_pat_…"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSave()}
-          />
+          <div style={{ display: 'flex', gap: 8 }}>
+            <input
+              id="gh-token"
+              type="password"
+              autoComplete="off"
+              className="modal-input"
+              placeholder="github_pat_…"
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && handleSave()}
+            />
+            <button type="button" className="btn btn-outline" style={{ flexShrink: 0 }} onClick={handlePaste}>
+              Incolla
+            </button>
+          </div>
+          {pasteError && <div className="modal-error">{pasteError}</div>}
         </div>
         {error && <div className="modal-error">{error}</div>}
         <div className="modal-actions">
@@ -77,6 +119,7 @@ export function TokenModal({ open, onClose }) {
               className="btn btn-danger"
               onClick={() => {
                 clearToken();
+                setQrUrl(null);
                 showToast('Token rimosso da questo dispositivo');
               }}
             >

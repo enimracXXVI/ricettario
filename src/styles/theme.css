@@ -243,36 +243,22 @@ button {
     display: none;
   }
 }
+/* Desktop-only inline bar. Hidden on mobile; the mobile drawer below is a
+   separate, portaled render so it never inherits .topnav's backdrop-filter
+   containing block. */
 .nav-menu {
   display: none;
-}
-.nav-menu.open {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 10px 16px 18px;
-  border-top: 1px solid var(--border);
-  background: var(--nav-bg);
 }
 .nav-links {
   display: flex;
   gap: 4px;
   align-items: center;
 }
-.nav-menu.open .nav-links {
-  flex-direction: column;
-  align-items: stretch;
-}
 .nav-actions {
   display: flex;
   gap: 8px;
   align-items: center;
   flex-wrap: wrap;
-}
-.nav-menu.open .nav-actions {
-  margin-top: 8px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border);
 }
 .nav-link {
   font-family: 'Syne', sans-serif;
@@ -298,13 +284,10 @@ button {
     padding: 0 20px;
   }
   .nav-menu {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 14px;
-    padding: 0;
-    border: none;
-    background: transparent;
     flex: 1;
     justify-content: flex-end;
   }
@@ -312,9 +295,75 @@ button {
     flex-direction: row;
   }
   .nav-menu .nav-actions {
-    margin: 0;
-    padding: 0;
-    border: none;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* ── MOBILE NAV DRAWER (portaled to <body>) ── */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 149;
+  background: rgba(0, 0, 0, 0.55);
+}
+.nav-drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(320px, 84vw);
+  padding: calc(20px + var(--safe-t)) 20px calc(20px + var(--safe-b));
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.35);
+  overflow-y: auto;
+}
+.nav-drawer-close {
+  display: flex;
+  align-self: flex-end;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+.nav-drawer .nav-links {
+  flex-direction: column;
+  align-items: stretch;
+}
+.nav-drawer .nav-link {
+  padding: 14px 12px;
+  font-size: 13px;
+}
+.nav-drawer .nav-actions {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-direction: column;
+  align-items: stretch;
+}
+.nav-drawer .nav-actions .btn {
+  width: 100%;
+}
+.nav-drawer .nav-actions .btn-theme {
+  align-self: flex-start;
+}
+@media (min-width: 760px) {
+  .nav-backdrop,
+  .nav-drawer {
+    display: none;
   }
 }
 

@@ -18,6 +18,7 @@ export function AppProvider({ children }) {
   const [conflict, setConflict] = useState(null);
   const [toast, setToast] = useState(null);
   const [pendingDraft, setPendingDraft] = useState(null);
+  const [glossaryPopup, setGlossaryPopup] = useState(null);
 
   const lastLoadedRef = useRef(null); // { data, sha } snapshot to revert to on cancel
   const draftTimerRef = useRef(null);
@@ -202,6 +203,9 @@ export function AppProvider({ children }) {
       pendingDraft,
       restoreDraft,
       discardDraft,
+      glossaryPopup,
+      showGlossaryTerm: (entry, rect) => setGlossaryPopup({ ...entry, rect }),
+      hideGlossaryTerm: () => setGlossaryPopup(null),
     }),
     [
       theme,
@@ -226,6 +230,7 @@ export function AppProvider({ children }) {
       pendingDraft,
       restoreDraft,
       discardDraft,
+      glossaryPopup,
     ]
   );
 

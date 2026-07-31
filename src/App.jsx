@@ -7,6 +7,7 @@ import { FormatToolbar } from './components/FormatToolbar';
 import { TokenModal } from './components/TokenModal';
 import { NewRecipeModal } from './components/NewRecipeModal';
 import { DraftBanner, ConflictBanner } from './components/Banners';
+import { GlossaryPopover } from './components/GlossaryPopover';
 import { Home } from './pages/Home';
 import { Recipe } from './pages/Recipe';
 import { Glossary } from './pages/Glossary';
@@ -54,6 +55,7 @@ function Shell() {
         )}
       </div>
       <FormatToolbar />
+      <GlossaryPopover />
       <Toast />
       <TokenModal open={settingsOpen} onClose={() => setSettingsOpen(false)} />
       <NewRecipeModal

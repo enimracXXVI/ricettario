@@ -17,8 +17,11 @@ function escRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Wraps plain-text occurrences of glossary terms in <a href="#gloss-...">
-// while leaving existing HTML tags untouched.
+// Wraps plain-text occurrences of glossary terms in a <span class="gloss-link">
+// (never a real href — a HashRouter owns the URL's # fragment for routing, so an
+// in-page href="#gloss-..." anchor gets swallowed as a broken route instead of
+// jumping to the term). The click/hover behaviour is wired up by the caller via
+// event delegation, opening an inline popover instead of navigating away.
 export function applyGlossLinks(html, map) {
   if (html == null) return '';
   const terms = Object.keys(map);
@@ -29,7 +32,9 @@ export function applyGlossLinks(html, map) {
     if (seg.startsWith('<')) return seg;
     return seg.replace(re, (m) => {
       const e = map[m.toLowerCase()];
-      return e ? `<a href="#${e.anchor}" class="gloss-link">${m}</a>` : m;
+      return e
+        ? `<span class="gloss-link" tabindex="0" role="button" data-term="${e.display}">${m}</span>`
+        : m;
     });
   });
 }
@@ -43,4 +48,16 @@ export function findUsages(term, recipes) {
     const procText = (r.procedure || '').replace(/<[^>]+>/g, '').toLowerCase();
     return inIng || procText.includes(key);
   });
+}
+
+// Full entry (definition + usages) for a term, looked up by display name —
+// used when opening the inline popover from a rendered gloss-link span.
+export function findGlossaryEntry(term, recipes) {
+  const key = (term || '').trim().toLowerCase();
+  if (!key) return null;
+  for (const r of recipes) {
+    const found = (r.glossary || []).find((g) => (g.term || '').trim().toLowerCase() === key);
+    if (found) return { term: found.term, def: found.def, usedIn: findUsages(found.term, recipes) };
+  }
+  return null;
 }

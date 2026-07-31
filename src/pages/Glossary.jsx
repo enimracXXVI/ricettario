@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { RichTextEditor } from '../components/RichTextEditor';
 import { findUsages, termAnchor } from '../lib/glossary';
@@ -6,9 +7,24 @@ import { moveItem } from '../lib/util';
 
 export function Glossary() {
   const { data, setData, editing } = useApp();
+  const location = useLocation();
 
   const all = [];
   data.recipes.forEach((r, rid) => (r.glossary || []).forEach((g, gi) => all.push({ rid, gi, r, g })));
+
+  // Arriving from the inline glossary popover's "Vai al glossario" link —
+  // scroll to and briefly highlight the term that was tapped/hovered.
+  useEffect(() => {
+    const term = location.state && location.state.term;
+    if (!term) return;
+    const el = document.getElementById(termAnchor(term));
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.classList.add('gloss-entry-highlight');
+    const t = setTimeout(() => el.classList.remove('gloss-entry-highlight'), 2200);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.state]);
 
   function updateEntry(rid, gi, field, value) {
     setData((prev) => {

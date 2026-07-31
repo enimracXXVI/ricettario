@@ -2,12 +2,14 @@ import { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { RichTextEditor } from '../components/RichTextEditor';
-import { applyGlossLinks, buildGlossMap } from '../lib/glossary';
+import { applyGlossLinks, buildGlossMap, findGlossaryEntry } from '../lib/glossary';
 import { moveItem } from '../lib/util';
+
+const CAN_HOVER = typeof window !== 'undefined' && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
 export function Recipe() {
   const { id } = useParams();
-  const { data, setData, editing } = useApp();
+  const { data, setData, editing, showGlossaryTerm, hideGlossaryTerm } = useApp();
   const navigate = useNavigate();
   const rid = data.recipes.findIndex((r) => r.id === id);
   const recipe = rid >= 0 ? data.recipes[rid] : null;
@@ -124,6 +126,29 @@ export function Recipe() {
     navigate('/');
   }
 
+  function openGlossFromEvent(e) {
+    const el = e.target.closest('.gloss-link');
+    if (!el) return;
+    const entry = findGlossaryEntry(el.dataset.term, data.recipes);
+    if (!entry) return;
+    showGlossaryTerm(entry, el.getBoundingClientRect());
+  }
+  function hoverInGloss(e) {
+    if (!CAN_HOVER) return;
+    const el = e.target.closest('.gloss-link');
+    if (!el) return;
+    const entry = findGlossaryEntry(el.dataset.term, data.recipes);
+    if (!entry) return;
+    showGlossaryTerm(entry, el.getBoundingClientRect());
+  }
+  function hoverOutGloss(e) {
+    if (!CAN_HOVER) return;
+    const from = e.target.closest('.gloss-link');
+    if (!from) return;
+    if (e.relatedTarget && from.contains(e.relatedTarget)) return;
+    hideGlossaryTerm();
+  }
+
   const gMap = editing ? {} : buildGlossMap(data.recipes);
   const hasAuthor = !!(recipe.author && recipe.author.trim());
   const prev = data.recipes[rid - 1];
@@ -209,7 +234,7 @@ export function Recipe() {
         )}
       </div>
 
-      <div className="recipe-body">
+      <div className="recipe-body" onClick={openGlossFromEvent} onMouseOver={hoverInGloss} onMouseOut={hoverOutGloss}>
         <div>
           <div className="col-label">Ingredienti</div>
           <div className="ing-list">
