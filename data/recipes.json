@@ -6,25 +6,79 @@
       "title": "Per’Bacco",
       "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Porzioni", "value": "2", "isCat": false },
-        { "label": "Preparazione", "value": "7 min", "isCat": false },
-        { "label": "Frulla", "value": "59 sec", "isCat": false },
-        { "label": "Categoria", "value": "Smoothie", "isCat": true }
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "7 min",
+          "isCat": false
+        },
+        {
+          "label": "Frulla",
+          "value": "59 sec",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Smoothie",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Acqua", "qty": "125 ml", "note": "Sostituibile con ghiaccio 🧊🧊🧊", "tags": [] },
-        { "name": "Limenta", "qty": "1 cubetto", "note": "", "tags": ["opzionale"] },
-        { "name": "Mela", "qty": "1", "note": "", "tags": [] },
-        { "name": "Arance", "qty": "2", "note": "", "tags": [] },
-        { "name": "Kiwi", "qty": "1", "note": "", "tags": [] },
-        { "name": "Uva", "qty": "250 g", "note": "", "tags": [] }
+        {
+          "name": "Acqua",
+          "qty": "125 ml",
+          "note": "Sostituibile con ghiaccio 🧊🧊🧊",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Limenta",
+          "qty": "1 cubetto",
+          "note": "",
+          "tags": [
+            "opzionale"
+          ],
+          "group": ""
+        },
+        {
+          "name": "Mela",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Arance",
+          "qty": "2",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Kiwi",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uva",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
       ],
-      "procedure": "Versa l’acqua nel frullatore — se preferisci usare il ghiaccio al suo posto, tienilo da parte e aggiungilo solo alla fine. Unisci la mela, le arance, il kiwi, l’uva e il cubetto di Limenta. Seleziona la modalità <strong>Smoothie&nbsp;→&nbsp;Smooth</strong> e avvia. Servi immediatamente.",
+      "procedure": "Versa l’acqua nel frullatore — se preferisci usare il ghiaccio al suo posto, tienilo da parte e aggiungilo solo alla fine. Unisci la mela, le arance, il kiwi, l’uva e il cubetto di limenta. Seleziona la modalità <strong>Smoothie → Smooth</strong> e avvia. Servi immediatamente.",
       "enjoy": "💙💜",
       "glossary": [
         {
           "term": "Limenta",
-          "def": "Un cubetto aromatico ottenuto frullando insieme succo e scorza di lime con foglie di menta fresca, quindi congelando il composto in stampi da ghiaccio. Si conserva in freezer per mesi e si aggiunge direttamente durante la frullatura, dove si scioglie rilasciando un aroma fresco e agrumato. Conviene prepararne una dose abbondante in anticipo."
+          "def": "Un intruglio composto da menta e lime o limone frullati insieme e poi congelati.<br><br>Si conserva in freezer per mesi e si aggiunge direttamente durante la frullatura, dove si scioglie rilasciando un aroma fresco e agrumato.&nbsp;<br><br>Conviene prepararne una dose abbondante in anticipo."
         }
       ],
       "tips": []
@@ -35,16 +89,56 @@
       "title": "Peanurt",
       "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Porzioni", "value": "2", "isCat": false },
-        { "label": "Preparazione", "value": "20 min", "isCat": false },
-        { "label": "Riposo", "value": "≈9 ore", "isCat": false },
-        { "label": "Categoria", "value": "Dolci", "isCat": true }
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "Riposo",
+          "value": "≈9 ore",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Dolci",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Yogurt", "qty": "100 g", "note": "", "tags": [] },
-        { "name": "Burro di arachidi", "qty": "90 g", "note": "", "tags": [] },
-        { "name": "Miele", "qty": "15 g", "note": "", "tags": [] },
-        { "name": "Cioccolato fondente", "qty": "20 g", "note": "", "tags": [] }
+        {
+          "name": "Yogurt",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro di arachidi",
+          "qty": "90 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Miele",
+          "qty": "15 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "qty": "20 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
       ],
       "procedure": "Mescola lo yogurt con il burro di arachidi e il miele fino a ottenere un composto omogeneo. Versa negli stampi e lascia congelare per almeno 9 ore. Quando pronti, sciogli il cioccolato fondente nel microonde e versalo sul composto ancora freddo.",
       "enjoy": "💙💜",
@@ -57,21 +151,65 @@
       "title": "Chocoflash",
       "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Porzioni", "value": "2", "isCat": false },
-        { "label": "Preparazione", "value": "5 min", "isCat": false },
-        { "label": "Cottura", "value": "5 min", "isCat": false },
-        { "label": "Categoria", "value": "Dolci", "isCat": true }
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "5 min",
+          "isCat": false
+        },
+        {
+          "label": "Cottura",
+          "value": "5 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Dolci",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Latte", "qty": "300 ml", "note": "", "tags": [] },
-        { "name": "Cacao", "qty": "20 g", "note": "", "tags": [] },
-        { "name": "Zucchero vanigliato", "qty": "20 g", "note": "", "tags": [] },
-        { "name": "Maizena", "qty": "10 g", "note": "", "tags": [] }
+        {
+          "name": "Latte",
+          "qty": "300 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cacao",
+          "qty": "20 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Zucchero vanigliato",
+          "qty": "20 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Maizena",
+          "qty": "10 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
       ],
       "procedure": "Setaccia tutte le polveri in una pentola e mescola con una frusta. Aggiungi un po’ di latte freddo per evitare i grumi, mescolando fino a ottenere una crema liscia. Scalda il restante latte e aggiungilo poco alla volta alla crema, incorporandolo completamente. Porta sul fuoco mescolando continuamente per evitare che si attacchi sul fondo, finché non raggiunge la densità preferita.",
       "enjoy": "💙💜",
       "glossary": [],
-      "tips": [{ "text": "Aggiungi una spolverata di cannella... yummy!" }]
+      "tips": [
+        {
+          "text": "Aggiungi una spolverata di cannella... yummy! 🤤🤤"
+        }
+      ]
     },
     {
       "id": "recipe-1779028997950",
@@ -79,17 +217,51 @@
       "title": "Melobevo",
       "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Porzioni", "value": "2", "isCat": false },
-        { "label": "Preparazione", "value": "5 min", "isCat": false },
-        { "label": "Categoria", "value": "Smoothie", "isCat": true },
-        { "label": "FRULLA", "value": "59 sec", "isCat": false }
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "5 min",
+          "isCat": false
+        },
+        {
+          "label": "FRULLA",
+          "value": "59 sec",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Smoothie",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Acqua", "qty": "250 g", "note": "Sostituibile con ghiaccio 🧊🧊🧊", "tags": [] },
-        { "name": "Mela", "qty": "3", "note": "", "tags": [] },
-        { "name": "Zenzero", "qty": "15 g", "note": "", "tags": [] }
+        {
+          "name": "Acqua",
+          "qty": "250 g",
+          "note": "Sostituibile con ghiaccio 🧊🧊🧊",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Mela",
+          "qty": "3",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Zenzero",
+          "qty": "15 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
       ],
-      "procedure": "Versa l’acqua nel frullatore — se preferisci usare il ghiaccio al suo posto, tienilo da parte e aggiungilo solo alla fine. Unisci la mela e lo zenzero. Seleziona la modalità <strong>Smoothie&nbsp;→&nbsp;Smooth</strong> e avvia. Servi immediatamente.",
+      "procedure": "Versa l’acqua nel frullatore — se preferisci usare il ghiaccio al suo posto, tienilo da parte e aggiungilo solo alla fine. Unisci la mela e lo zenzero. Seleziona la modalità <strong>Smoothie → Smooth</strong> e avvia. Servi immediatamente.",
       "enjoy": "💙💜",
       "glossary": [],
       "tips": []
@@ -100,83 +272,528 @@
       "title": "Cookiiiiiies",
       "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Porzioni", "value": "2", "isCat": false },
-        { "label": "Preparazione", "value": "10 min", "isCat": false },
-        { "label": "Congelatore", "value": "30 min", "isCat": false },
-        { "label": "Cottura", "value": "10/15 min", "isCat": false },
-        { "label": "Categoria", "value": "Dolci", "isCat": true }
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "Congelatore",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "Cottura",
+          "value": "10/15 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Dolci",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Zucchero", "qty": "100 g", "note": "", "tags": [] },
-        { "name": "Burro", "qty": "100 g", "note": "", "tags": [] },
-        { "name": "Uova", "qty": "1", "note": "", "tags": [] },
-        { "name": "Miele", "qty": "10 g", "note": "", "tags": [] },
-        { "name": "Lievito", "qty": "5 g", "note": "Per dolci!", "tags": [] },
-        { "name": "Farina", "qty": "300 g", "note": "", "tags": [] },
-        { "name": "Cioccolato", "qty": "50 g", "note": "", "tags": [] }
+        {
+          "name": "Zucchero",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uova",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Miele",
+          "qty": "10 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Lievito",
+          "qty": "5 g",
+          "note": "Per dolci!",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Farina",
+          "qty": "300 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cioccolato",
+          "qty": "50 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
       ],
       "procedure": "",
       "enjoy": "💙💜",
       "glossary": [],
-      "tips": [{ "text": "Con un caffè ancora meglio! ☕" }]
+      "tips": [
+        {
+          "text": "Con un caffè ancora meglio! ☕"
+        }
+      ]
     },
     {
       "id": "recipe-1779031703412",
       "categoryLabel": "Primi",
       "title": "Risotto alla zucca",
-      "author": "",
+      "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Porzioni", "value": "2", "isCat": false },
-        { "label": "Preparazione", "value": "10 min", "isCat": false },
-        { "label": "Cottura", "value": "40 min", "isCat": false },
-        { "label": "Categoria", "value": "Primi", "isCat": true }
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "Cottura",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Riso", "qty": "250 g", "note": "", "tags": [] },
-        { "name": "Zucca", "qty": "300 g", "note": "", "tags": [] },
-        { "name": "Grattugiato", "qty": "100 g", "note": "", "tags": [] },
-        { "name": "Brodo", "qty": "1 l", "note": "", "tags": [] },
-        { "name": "Cipolla", "qty": "1", "note": "", "tags": [] },
-        { "name": "Burro", "qty": "50 g", "note": "", "tags": ["Opzionale"] },
-        { "name": "Vino bianco", "qty": "100 g", "note": "", "tags": ["opzionale"] }
+        {
+          "name": "Riso",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Zucca",
+          "qty": "300 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Grattugiato",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Brodo",
+          "qty": "1 l",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "50 g",
+          "note": "",
+          "tags": [
+            "Opzionale"
+          ],
+          "group": ""
+        },
+        {
+          "name": "Vino bianco",
+          "qty": "100 g",
+          "note": "",
+          "tags": [
+            "opzionale"
+          ],
+          "group": ""
+        }
       ],
-      "procedure": "Trita la cipolla e falla soffriggere, poi aggiungi la zucca a cubetti. Quando la zucca è morbida, unisci il riso e fallo tostare. Sfuma con il vino bianco, aggiungi il Brodo e fai cuocere per circa 20 minuti. Infine, manteca con il burro e il formaggio grattugiato.",
+      "procedure": "Trita la cipolla e falla soffriggere, poi aggiungi la zucca a cubetti. Quando la zucca è morbida, unisci il riso e fallo tostare. Sfuma con il vino bianco, aggiungi il brodo e fai cuocere per circa 20 minuti. Infine, manteca con il burro e il formaggio grattugiato.",
       "enjoy": "💙💜",
       "glossary": [
         {
           "term": "Brodo",
-          "def": "Se non vuoi usare il dado, prepara il brodo vegetale con acqua e spezie: aglio, cipolla, curry, pepe, paprika, erba cipollina. Oppure usa del brodo già pronto."
+          "def": "Se non vuoi usare il dado, puoi preparare il brodo con tanta acqua \nquanta necessaria e spezie: aglio, cipolla, curry, pepe, paprika, erba \ncipollina.&nbsp;<br><br>In alternativa, tanta acqua quanto brodo ti serve e del soffritto facendolo cuocere per almeno 40 minuti.<br><br>Oppure usa del brodo già pronto 🫣🙃"
         }
       ],
       "tips": []
     },
     {
+      "id": "recipe-1779135094361",
+      "categoryLabel": "Smoothie & Bevande",
+      "title": "Se Danno Carote",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "5 min",
+          "isCat": false
+        },
+        {
+          "label": "frulla",
+          "value": "59 sec",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Smoothie",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Acqua",
+          "qty": "300 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Carota",
+          "qty": "150 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Sedano",
+          "qty": "50 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Ghiaccio",
+          "qty": "50 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Lime",
+          "qty": "30 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Miele",
+          "qty": "25 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Zenzero",
+          "qty": "10 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Inserisci nel frullatore tutti gli ingredienti (prima i liquidi, poi i \nsolidi e, per ultimo, l'eventuale ghiaccio) e azionalo sulla modalità <strong>Smoothie → Smooth</strong>.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779134635582",
+      "categoryLabel": "Smoothie & Bevande",
+      "title": "Piccamelo'n'",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "frulla",
+          "value": "59 sec",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Smoothie",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Anguria",
+          "qty": "530 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Fragole",
+          "qty": "150 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Limenta",
+          "qty": "1 cubetto",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Peperoncino",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Metti l'anguria nel frullatore, poi le fragole surgelate, il cubetto di limenta e un pizzico di peperoncino.<br><br>Seleziona la modalità <strong>Smoothie → Smooth</strong> e avvia.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779134736576",
+      "categoryLabel": "Primi",
+      "title": "Zuppa di pomodoro",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pomodori",
+          "qty": "1,500 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Brodo",
+          "qty": "400 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Stracciatella",
+          "qty": "150 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Basilico",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pane",
+          "qty": "4 fette",
+          "note": "Segale 🤤",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Prepara il brodo.<br><br>Lava\n e taglia i pomodori e la cipolla, adagiali su una teglia foderata con \ncarta forno e condisci il tutto con sale, pepe e olio EVO.<br><br>Cuoci in forno preriscaldato a <span style=\"color:rgb(156, 254, 0)\">200°C</span> per circa 30 minuti e poi trasferisci in un boccale alto e frullalo.<br><br>Tosta il pane poi versa la zuppa e aggiungi basilico e stracciatella.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": [
+        {
+          "text": "Puoi aggiungere anche dei pinoli e un filo di olio EVO a crudo 🫒"
+        }
+      ]
+    },
+    {
       "id": "casatiello",
       "categoryLabel": "Altro",
       "title": "Casatiello",
-      "author": "",
+      "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Porzioni", "value": "2", "isCat": false },
-        { "label": "Preparazione", "value": "30 min", "isCat": false },
-        { "label": "Lievitazione", "value": "≈3 ore", "isCat": false },
-        { "label": "Cottura", "value": "65 min", "isCat": false },
-        { "label": "Categoria", "value": "Altro", "isCat": true }
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "Lievitazione",
+          "value": "≈3 ore",
+          "isCat": false
+        },
+        {
+          "label": "Cottura",
+          "value": "65 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Altro",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Acqua", "qty": "375 g", "note": "A temperatura ambiente", "tags": [] },
-        { "name": "Farina 00", "qty": "650 g", "note": "", "tags": [] },
-        { "name": "Lievito in polvere", "qty": "7 g", "note": "", "tags": [] },
-        { "name": "Olio d’oliva", "qty": "25 g", "note": "", "tags": [] },
-        { "name": "Strutto", "qty": "110 g", "note": "", "tags": [] },
-        { "name": "Sale", "qty": "15 g", "note": "", "tags": [] },
-        { "name": "Pepe", "qty": "4 g", "note": "", "tags": [] },
-        { "name": "Zucchero", "qty": "5 g", "note": "", "tags": [] },
-        { "name": "Provolone dolce", "qty": "140 g", "note": "", "tags": [] },
-        { "name": "Pecorino / Asiago", "qty": "140 g", "note": "", "tags": [] },
-        { "name": "Salame", "qty": "230 g", "note": "", "tags": [] },
-        { "name": "Uova", "qty": "6", "note": "", "tags": [] }
+        {
+          "name": "Acqua",
+          "qty": "375 g",
+          "note": "A temperatura ambiente",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Farina 0 o 00",
+          "qty": "650 g",
+          "note": "250 W",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Lievito in polvere",
+          "qty": "7 g",
+          "note": "",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Olio EVO",
+          "qty": "25 g",
+          "note": "",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Strutto",
+          "qty": "110 g",
+          "note": "",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Sale",
+          "qty": "15 g",
+          "note": "",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Pepe",
+          "qty": "4 g",
+          "note": "",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Zucchero",
+          "qty": "5 g",
+          "note": "",
+          "tags": [],
+          "group": "Impasto"
+        },
+        {
+          "name": "Provolone dolce",
+          "qty": "140 g",
+          "note": "",
+          "tags": [],
+          "group": "Ripieno"
+        },
+        {
+          "name": "Pecorino / Asiago",
+          "qty": "140 g",
+          "note": "",
+          "tags": [],
+          "group": "Ripieno"
+        },
+        {
+          "name": "Salame",
+          "qty": "230 g",
+          "note": "",
+          "tags": [],
+          "group": "Ripieno"
+        },
+        {
+          "name": "Uova",
+          "qty": "6",
+          "note": "",
+          "tags": [],
+          "group": "Ripieno"
+        }
       ],
-      "procedure": "Aggiungi il lievito all’acqua a temperatura ambiente e mescola poi olio, metà strutto e amalgama il tutto.<br>Aggiungi la farina setacciata poco alla volta fino a ottenere una pastella alla quale aggiungi sale e pepe.<br>Aggiungi l’altra metà della farina e dello strutto e impasta almeno per 10 minuti.<br>Fai crescere l’impasto coperto per qualche ora.<br>Taglia tutto il ripieno a cubetti, stendi l’impasto a forma rettangolare e metti gli ingredienti.<br>Chiudi formando una girella, metti nella teglia leggermente struttata e fai crescere per almeno 1 ora.<br>Cuoci a forno statico a 170° sul ripiano più basso per circa 65 minuti.",
+      "procedure": "Aggiungi il lievito all’acqua a temperatura ambiente e mescola poi olio, metà strutto e amalgama il tutto.<br><br>Aggiungi la farina setacciata poco alla volta fino a ottenere una pastella alla quale aggiungi sale e pepe.<br><br>Aggiungi l’altra metà della farina e dello strutto e impasta almeno per 10 minuti.<br><br>Fai crescere l’impasto coperto per qualche ora.<br><br>Taglia tutto il ripieno a cubetti, stendi l’impasto a forma rettangolare e metti gli ingredienti.<br><br>Chiudi formando una girella, metti nella teglia leggermente struttata e fai crescere per almeno 1 ora.<br><br>Cuoci a forno statico a <span style=\"color:rgb(156, 254, 0)\">170°C</span> sul ripiano più basso per circa 65 minuti.",
       "enjoy": "💙💜",
       "glossary": [],
       "tips": []
@@ -185,23 +802,2070 @@
       "id": "besciamella",
       "categoryLabel": "Preparazioni di base",
       "title": "Besciamella",
-      "author": "",
+      "author": "Lu e Ciucio",
       "meta": [
-        { "label": "Resa", "value": "1 litro", "isCat": false },
-        { "label": "Preparazione", "value": "15 min", "isCat": false },
-        { "label": "Cottura", "value": "8 min", "isCat": false },
-        { "label": "Categoria", "value": "Base", "isCat": true }
+        {
+          "label": "porzione",
+          "value": "1 litro",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "15 min",
+          "isCat": false
+        },
+        {
+          "label": "Cottura",
+          "value": "8 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Base",
+          "isCat": true
+        }
       ],
       "ingredients": [
-        { "name": "Burro", "qty": "100 g", "note": "", "tags": [] },
-        { "name": "Farina 00", "qty": "100 g", "note": "", "tags": [] },
-        { "name": "Latte intero", "qty": "1 l", "note": "", "tags": [] }
+        {
+          "name": "Burro",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Farina 00",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Latte intero",
+          "qty": "1 l",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
       ],
-      "procedure": "Fai sciogliere il burro in un pentolino. Toglilo dal fuoco, aggiungi la farina setacciata e mescola per non fare formare grumi. Rimetti sul fuoco finché non diventa dorato.<br>Riscalda il latte, aggiungine un po’ per stemperare il fondo e poi il resto. Fai cuocere a fuoco dolce per 5–6 minuti.<br>Aggiusta di sale e noce moscata.",
+      "procedure": "Fai sciogliere il burro in un pentolino. <br><br>Toglilo dal fuoco, aggiungi la farina setacciata e mescola per non fare formare grumi e rimetti sul fuoco finché non diventa dorato.<br><br>Riscalda il latte, aggiungine un po’ per stemperare il fondo e poi il resto. Fai cuocere a fuoco dolce per 5–6 minuti.<br><br>Aggiusta di sale e noce moscata.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779209540669",
+      "categoryLabel": "Primi",
+      "title": "Cannoli di pancarrè",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "10 cannoli",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "15 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "15 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pane bianco",
+          "qty": "10 fette",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Passata",
+          "qty": "350 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Olive nere",
+          "qty": "30",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Mozzarella",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uova",
+          "qty": "2",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Grattugiato",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pangrattato",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Stendi una fetta di pane e farciscila in diagonale con due cucchiai di passata, sei metà di olive nere, mozzarella, grattugiato, olio EVO e origano.<br><br>Prendi gli angoli opposti e uniscili formando un cannolo.<br><br>Passa ogni cannolo dapprima nell'uovo sbattuto aggiustato di sale e pepe e poi nel pangrattato.<br><br>Inforna a <span style=\"color:rgb(156, 254, 0)\">190°C</span> per 15 minuti.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779216097173",
+      "categoryLabel": "Dolci & Dessert",
+      "title": "Bonbon Truffle",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "15 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "riposo",
+          "value": "60 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Dolci",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Cioccolato fondente",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "125 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Tuorli",
+          "qty": "2",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Zucchero a velo",
+          "qty": "125 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Vanillina",
+          "qty": "15 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cacao",
+          "qty": "50 g",
+          "note": "o del cocco in polvere",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Fondi il cioccolato a bagnomaria e poi aggiungi il burro, precedentemente tagliato a dadini, poco alla volta e toglierlo dal fuoco una volta sciolto tutto.<br><br>A questo punto aggiungi i tuorli, la vanillina e lo zucchero e mescola bene.<br><br>Fai riposare in frigo per almeno un'ora.<br><br>Una volta rassodato, prendi l'impasto, fai le palline e poi falle rotolare nel cacao o nel cocco.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779633751262",
+      "categoryLabel": "Secondi",
+      "title": "Filet en croûte",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "60 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Filetto di maiale",
+          "qty": "300 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Salsiccia",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Funghi",
+          "qty": "150 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Crudo",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uovo",
+          "qty": "1",
+          "note": "Per spennellare",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Sbudella la salsiccia e falla rosolare in una padalla.<br><br>Nella \nstessa padella poi fai rosolare i funghi, fai asciugare l'acqua da loro \nrilasciata e poi aggiungine un po' tu e aggiusta di sale e pepe.<br><br>Fai\n rosolare bene il filetto su tutti i lati con sale e paprica e, mentre \nsi raffredda, trita la salsiccia e funghi non troppo finemente.<br><br>Apri\n la pasta sfoglia e coprila col prosciutto, metti il trito di salsiccia e\n funghi poi il filetto e richiudi bene la pasta su sé stessa.<br><br>Spennella con l'uovo e inforna a <span style=\"color:rgb(2, 178, 251)\"><span style=\"color:rgb(156, 254, 0)\">200°C</span></span> statico per 45 minuti.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779634595901",
+      "categoryLabel": "Preparazioni di base",
+      "title": "Crêpes",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "12 crêpes",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "riposo",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "3 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Preparazioni",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Farina",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Latte",
+          "qty": "500 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "40 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uova",
+          "qty": "3",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Versa la farina setacciata in una ciotola, aggiungi il latte e mescola bene.<br><br>Aggiungi le uova con un po' di sale e amalgama bene l'impasto.<br><br>Sciogli il burro, aggiungilo all'impasto e copri con pellicola lasciando riposare in frigo per 30 minuti.<br><br>Trascorso\n questo tempo, fai riscaldare una pentola unta col burro, versa una \nmestolata di composto e distribuiscilo uniformemente sul fondo. Appena \nsi stacca dal fondo, girala e falla cuocere un altro minuto.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779634897553",
+      "categoryLabel": "Secondi",
+      "title": "Crêpes agli asparagi",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "60 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Besciamella",
+          "qty": "500 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Asparagi",
+          "qty": "600 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Groviera",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "30 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Crêpes",
+          "qty": "12",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Prepara la <a href=\"#besciamella\" class=\"proc-link\">besciamella</a> e le <a href=\"#recipe-1779634595901\" class=\"proc-link\">crêpes</a>.<br><br>Pulisci gli asparagi e lessali, scolandoli al dente. Conserva circa 10 cm delle punte e, mentre tagli i gambi a pezzetti, li fai saltare in padella a fuoco allegro con il burro per circa 5 minuti, aggiustando di sale e pepe. <br><br>Poi frullali e aggiungi circa 375 ml di besciamella, ottenendo così una crema omogenea. Farcisci le crêpes con un cucchiaio di questa crema e una grattugiata di groviera, poi chiudile e sistemale in una pirofila unta. <br><br>Versaci sopra la restante besciamella, le punte degli asparagi tenute da parte e un altro po' di grattugiato. <br><br>Infine, fai gratinare per 5-10 minuti in forno in modalità grill.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779641771591",
+      "categoryLabel": "Secondi",
+      "title": "Ruoto al forno",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "90 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Agnello",
+          "qty": "1.2 kg",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Patate",
+          "qty": "1 kg",
+          "note": "8 medie",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Piselli",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Aglio",
+          "qty": "5 spicchi",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "2",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Taglia le patate e mettine in un ruoto insieme alla carne, i piselli, l'aglio e la cipolla. <br><br>Aggiungi l'acqua quasi fino a coprire il tutto, poi condisci con olio, sale, origano e paprika. <br><br>Riscalda il forno in modalità statica a <span style=\"color:rgb(156, 254, 0)\">200°C</span> e inforna per circa 90 minuti, avendo cura di girare il tutto di tanto in tanto durante la cottura.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779641952302",
+      "categoryLabel": "Primi",
+      "title": "Pasta con pancetta, piselli e passata",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pancetta",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Piselli",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Passata",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Fai soffriggere la cipolla con un po' d'olio, poi aggiungi la pancetta e lasciala rosolare. Infine, metti i piselli, aggiusta con sale e paprika e lascia cuocere per circa 10 minuti. <br><br>Nel frattempo, metti a bollire l'acqua per la pasta.<br><br>Aggiungi la passata di pomodoro ai piselli e fai cuocere per altri 20 minuti. Scola la pasta e mescola il tutto.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779642064953",
+      "categoryLabel": "Primi",
+      "title": "Boscaiola",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "25 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cotto",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Panna da cucina",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Funghi",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Passata",
+          "qty": "350 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Aglio",
+          "qty": "1 spicchio",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Dado",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Fai soffriggere l'aglio e la cipolla, poi aggiungi il prosciutto, i funghi, sale, paprika, un po' d'acqua e un dado, lasciando cuocere per 3 o 5 minuti.<br><br>Aggiungi la passata e, dopo 10 minuti, metti a bollire l'acqua per la pasta. <br><br>Quando la pasta è quasi cotta, aggiungi la panna al sugo, poi scola la pasta e mescola tutto insieme.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779642317013",
+      "categoryLabel": "Secondi",
+      "title": "Costatelle di maiale",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "25 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Costatelle di maiale",
+          "qty": "400 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Panna da cucina",
+          "qty": "30 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Vino bianco",
+          "qty": "100 g",
+          "note": "Anche una bella birra bionda va bene 🍺",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Dado",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Mostarda",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si comincia cospargendo le costatelle con la mostarda, il sale e la paprika, per poi farle rosolare per bene in padella.<br><br>Si aggiungono l'acqua e il dado lasciando cuocere il tutto per 10 minuti, dopodiché si sfuma a fuoco vivo con il vino bianco o la birra.<br><br>Non appena l'alcol sarà del tutto evaporato, si toglie la carne dalla padella e si unisce la panna al fondo di cottura, lasciando addensare la salsa per qualche istante prima di servire.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779642467366",
+      "categoryLabel": "Primi",
+      "title": "Fusilli al tonno",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "5 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "25 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Passata",
+          "qty": "500 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Tonno",
+          "qty": "100 g",
+          "note": "Sgocciolato",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Olive nere",
+          "qty": "50 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Aglio",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Dado",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si fa soffriggere l'aglio insieme alla cipolla, poi si aggiungono un po' d'acqua e il dado.<br><br>Dopo circa 3 minuti di cottura si uniscono la passata, il sale e la paprika, lasciando sobbollire il sugo a fuoco basso per 10 minuti mentre si mette a bollire l'acqua per la pasta.<br><br>Quando si calano i fusilli, si aggiungono al condimento anche il tonno sgranato e le olive nere; infine, si scola la pasta e si mescola tutto insieme direttamente in padella.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779642768005",
+      "categoryLabel": "Primi",
+      "title": "Pasta con tonno, mais e besciamella",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "60 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "60 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Tonno",
+          "qty": "290 g",
+          "note": "Sgocciolato",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Besciamella",
+          "qty": "500 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Mais",
+          "qty": "125 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Grattugiato",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pangrattato",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si comincia facendo soffriggere la cipolla in padella per poi aggiungere il tonno sgranato. Nel frattempo, mentre ci si dedica alla preparazione della <a href=\"#besciamella\" class=\"proc-link\">besciamella</a>, si mette a bollire l'acqua e si cala la pasta.<br><br>Una volta cotta la pasta, la si scola e si mescola direttamente con il tonno e la besciamella, unendo al composto anche il mais per distribuire bene tutti gli ingredienti.<br><br>Infine, si imburra una teglia da forno, si versa tutto il contenuto all'interno e si cosparge la superficie in modo uniforme con il formaggio grattugiato e il pangrattato. Si inforna in forno preriscaldato a <span style=\"color:rgb(156, 254, 0)\">200°C</span> per circa 30 minuti, fino a ottenere una bella crosticina dorata.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779642937185",
+      "categoryLabel": "Primi",
+      "title": "Insalata di pasta fredda",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "riposo",
+          "value": "120 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Mais",
+          "qty": "150 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Maionese",
+          "qty": "150 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Limone",
+          "qty": "90 g",
+          "note": "Spremuto eh!",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Wurstel",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uova",
+          "qty": "4",
+          "note": "Sode 🥚",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Per prima cosa si prepara la pasta e la si lascia raffreddare completamente; si procede allo stesso modo cucinando le uova sode per poi lasciarle raffreddare a loro volta.<br><br>Successivamente si tagliano i wurstel a rondelle e le uova sode a pezzetti. Si unisce il tutto in un'ampia insalatiera insieme alla pasta, al mais, al pomodoro grande tagliato a pezzi e alla maionese.<br><br>Per dare una nota di freschezza, si spremono i limoni direttamente sul composto, si aggiusta di sale secondo i propri gusti e si mescola bene il tutto prima di servire o riporre in frigorifero.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779645462565",
+      "categoryLabel": "Primi",
+      "title": "Penne con salsiccia",
+      "author": "",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Salsiccia",
+          "qty": "500 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Polpa di pomodoro",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Dado",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si inizia facendo soffriggere la cipolla, poi si aggiungono la salsiccia sgranata, la paprika, un po' d'acqua e il dado, lasciando cuocere il tutto per circa 5 minuti.<br><br>Successivamente si unisce la polpa di pomodoro e si lascia sobbollire il sugo lentamente per circa 20 minuti, così da farlo restringere per bene.<br><br>Nel frattempo si cuoce la pasta in abbondante acqua salata, si scola al dente e infine si mescola tutto assieme direttamente nella padella con il condimento.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779645626794",
+      "categoryLabel": "Primi",
+      "title": "Farfalle panna e prosciutto",
+      "author": "",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "—",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cotto",
+          "qty": "300 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Panna da cucina",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Dado",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Grattugiato",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Per prima cosa si fa sciogliere il burro in padella e si mette a rosolare il prosciutto cotto tagliato a pezzetti. Si aggiungono poi la paprika, una grattugiata di noce moscata, un goccio d'acqua e il dado per insaporire il fondo.<br><br>Circa 3 minuti dopo aver calato le farfalle nell'acqua bollente, si uniscono la panna e il grattugiato direttamente nella padella con il prosciutto, creando una cremina.<br><br>Infine, una volta completata la cottura, si scola la pasta e si mescola tutto insieme affinché il sugo avvolga perfettamente le farfalle.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779645761300",
+      "categoryLabel": "Preparazioni di base",
+      "title": "Pasta brisée",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "riposo",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Preparazioni",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Farina",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Acqua",
+          "qty": "70 g",
+          "note": "Deve essere ghiacciata 🥶🥶",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Albume",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si inizia frullando la farina insieme al burro freddo tagliato a cubetti e a un pizzico di sale. Quando il composto assume una consistenza sabbiosa, lo si trasferisce su un piano di lavoro disponendolo a fontana, si versa l'acqua ghiacciata e si impasta rapidamente. Una volta ottenuto un panetto omogeneo, lo si avvolge nella pellicola trasparente e lo si lascia riposare in frigorifero per almeno 40 minuti.<br><br>Passato il tempo di riposo, si stende l'impasto e lo si sistema all'interno di una teglia. Si bucherella il fondo con i rebbi di una forchetta, si copre con un foglio di carta forno e si distribuiscono sopra i fagioli di ceramica per la cottura in bianco.<br><br>Si inforna quindi in forno preriscaldato a <span style=\"color:rgb(156, 254, 0)\">190°C</span> per 15 minuti; dopodiché si rimuovono i fagioli di ceramica, si spennella la base con l'albume d'uovo e si rimette in forno a <span style=\"color:rgb(156, 254, 0)\">170°C</span> per altri 5-10 minuti per farla asciugare e dorare.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779645953863",
+      "categoryLabel": "Altro",
+      "title": "Quiche Lorraine",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "60 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Altro",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta brisée",
+          "qty": "350 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Panna fresca",
+          "qty": "300 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pancetta",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Formaggio",
+          "qty": "150 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uovo",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Tuorli",
+          "qty": "3",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Per prima cosa si fa lessare la pancetta in acqua bollente. Nel frattempo, si prepara la crema sbattendo insieme la panna, l'uovo intero, i tuorli, un pizzico di sale, pepe e una grattugiata di noce moscata.<br><br>Una volta che la <a href=\"#recipe-1779645761300\" class=\"proc-link\">pasta brisée</a> è pronta nella teglia, si distribuiscono sulla base il formaggio a pezzetti e la pancetta sbollentata, per poi ricoprire il tutto versando uniformemente la crema appena preparata.<br><br>Infine, si mette la quiche in forno statico a <span style=\"color:rgb(156, 254, 0)\">170°C</span> e si lascia cuocere per circa 15-20 minuti, fino a quando il ripieno non si sarà rassodato e risulterà leggermente dorato in superficie.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779646195131",
+      "categoryLabel": "Primi",
+      "title": "Risotto ai porcini secchi",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "15 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Riso",
+          "qty": "250 g",
+          "note": "Arborio",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Porcini secchi",
+          "qty": "40 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Brodo",
+          "qty": "1 l",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Vino rosso",
+          "qty": "100 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Scalogno",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "10 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si inizia mettendo i funghi porcini secchi in ammollo in acqua calda per farli rinvenire. Intanto, in una casseruola, si fa rosolare lo scalogno tritato con un filo d'olio extravergine e una noce di burro, per poi aggiungere il riso e tostarlo fino a quando i chicchi non diventano traslucidi. A quel punto si sfuma con il mezzo bicchiere di vino rosso e si lascia evaporare la parte alcolica.<br><br>Nel frattempo si scolano i funghi, si strizzano per bene e si tagliano a pezzetti, avendo cura di filtrare la loro acqua di ammollo che va versata direttamente nel riso.<br><br>Quando il liquido è quasi del tutto asciutto, si prosegue la cottura aggiungendo il brodo bollente un mestolo alla volta. Una volta cotto il riso, si spegne il fuoco e si manteca energicamente con il burro rimasto e, a piacere, con una generosa spolverata di grattugiato.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779646391924",
+      "categoryLabel": "Secondi",
+      "title": "Zucchine ripiene",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Zucchina",
+          "qty": "4",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Ricotta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pancetta",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Scamorza",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Passata",
+          "qty": "750 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uova",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pangrattato",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si parte cuocendo le zucchine intere in acqua bollente per circa 5 minuti. Una volta scolate e lasciate raffreddare, si tagliano a metà nel senso della lunghezza e si svuotano delicatamente della loro polpa interna. In una padella a parte si fa rosolare la pancetta.<br><br>In una ciotola si unisce la polpa delle zucchine sminuzzata insieme alla ricotta, al pangrattato, all'uovo intero, alla provola tagliata a cubetti e alla pancetta rosolata, mescolando bene per amalgamare il tutto.<br><br>Si procede quindi a farcire i gusci di zucchina con il composto ottenuto. Infine, si sistemano le zucchine in una padella capiente e si fanno cuocere coperte per circa 20-30 minuti insieme alla passata di pomodoro, aggiungendo anche un goccio d'acqua e uno spicchio d'aglio per insaporire il sughetto.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779646785579",
+      "categoryLabel": "Secondi",
+      "title": "Gratin de patate",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Patate",
+          "qty": "1 kg",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pancetta",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Latte",
+          "qty": "500 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Grattugiato",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si inizia tagliando le patate a lamelle sottili e si adagia un primo strato all'interno di una teglia precedentemente imburrata. A ogni strato si distribuiscono uniformemente l'aglio tritato, il formaggio grattugiato e la pancetta.<br><br>Una volta terminati tutti gli strati a disposizione, si versa il latte su tutta la superficie e si aggiusta il tutto con sale, pepe, una grattugiata di noce moscata e un'ultima manciata di grattugiato per favorire la gratinatura.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779646886796",
+      "categoryLabel": "Primi",
+      "title": "Pasta e patate",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "15 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Patate",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pancetta",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Passata",
+          "qty": "750 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Dado",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "2",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Per prima cosa si tagliano le patate a cubetti e si mettono a soffriggere in una pentola capiente insieme alla cipolla affettata e alla pancetta, lasciando insaporire per qualche minuto.<br><br>Successivamente si aggiungono la passata di pomodoro, l'acqua, il dado e un pizzico di pepe, portando il tutto a bollore e lasciando cuocere finché le patate non si saranno ammorbidite.<br><br>Non appena le patate risultano tenere, si cala la pasta direttamente nella stessa pentola con il brodo di patate, portandola a cottura ideale e mescolando di tanto in tanto.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779647127078",
+      "categoryLabel": "Primi",
+      "title": "Tagliatelle col tritato",
+      "author": "Patricia",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Primi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Pasta",
+          "qty": "250 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Tritato",
+          "qty": "400 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Panna da cucina",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolla",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Aglio",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si inizia facendo rosolare il burro in una padella capiente insieme all'aglio e alla cipolla tritati finemente.<br><br>Si aggiunge quindi la carne tritata facendola colorire, poi si insaporisce con la paprika, il sale, un po' d'acqua e il dado, lasciando cuocere il sughetto. Nel frattempo, si mette a bollire l'acqua sul fuoco per la pasta.<br><br>Quando le tagliatelle sono quasi pronte e scolate al dente, si aggiunge la panna direttamente nel sugo di carne e infine si salta tutta la pasta insieme per amalgamare il tutto.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779647213763",
+      "categoryLabel": "Dolci & Dessert",
+      "title": "Mousse al peperoncino",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "riposo",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Dolci",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Panna da montare",
+          "qty": "125 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Latte",
+          "qty": "125 ml",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Zucchero vanigliato",
+          "qty": "25 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "qty": "50 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Peperoncino",
+          "qty": "3 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Tuorli",
+          "qty": "2",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si comincia facendo sciogliere il cioccolato fondente a bagnomaria; a parte, si scalda il latte insieme alla vanillina fino a sfiorare il bollore e lo si unisce al cioccolato fuso.<br><br>In una ciotola si montano i tuorli d'uovo con lo zucchero fino a ottenere un composto soffice e spumoso. Si uniscono i tuorli al cioccolato e si rimette tutto sul fuoco lento, mescolando continuamente fino a quando il composto non sfiora il bollore, per poi lasciarlo raffreddare completamente.<br><br>Infine, si monta la panna a neve ben ferma e la si incorpora delicatamente al composto di cioccolato ormai freddo, mescolando dal basso verso l'alto per non smontarla.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779901832244",
+      "categoryLabel": "Colazione",
+      "title": "Pancakes",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura\\",
+          "value": "20 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Dolci",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Farina 00",
+          "qty": "125 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Zucchero",
+          "qty": "25 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Olio di semi",
+          "qty": "20 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Latte",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "qty": "5 g",
+          "note": "Baking Powder per gli 🇬🇧",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Uova",
+          "qty": "2",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si comincia separando i tuorli dagli albumi e montando questi ultimi a neve ben ferma.<br><br>In un'altra ciotola, si sbattono i tuorli insieme al latte e all'olio di semi, mescolando velocemente. A questo composto si uniscono poi la farina, il lievito per dolci e lo zucchero, precedentemente setacciati, amalgamando bene il tutto. Infine, si incorporano delicatamente gli albumi montati a neve, muovendo il composto dal basso verso l'alto per non smontarlo.<br><br>Per la cottura su piastra, si imposta la temperatura inizialmente a 3 per preriscaldare la superficie, per poi scendere a 2 nel momento in cui si inizia a cuocere i pancakes.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": [
+        {
+          "text": "Vabbè lo sciroppo d'acero è la morte sua 🍁🇨🇦 🤤"
+        }
+      ]
+    },
+    {
+      "id": "recipe-1779902058830",
+      "categoryLabel": "Altro",
+      "title": "Panelle",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "30 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Altro",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Farina di ceci",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Acqua",
+          "qty": "600 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Sale",
+          "qty": "5 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Olio EVO",
+          "qty": "15 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Per prima cosa si setaccia la farina di ceci direttamente all'interno di una pentola. Si uniscono a filo l'acqua e l'olio extravergine d'oliva, poi si aggiungono il sale e il pepe, mescolando con cura il composto per almeno 5 minuti in modo da eliminare ogni grumo.<br><br>Si fa cuocere il tutto sul fuoco fino a ottenere la classica consistenza densa, dopodiché si stende l'impasto ancora caldo su un foglio di carta forno, livellandolo per bene.<br><br>Una volta che il composto si sarà rassodato, lo si taglia nelle tipiche forme delle panelle e si inforna a <span style=\"color:rgb(156, 254, 0)\">180°C</span> per circa 15-20 minuti, fino a quando non risulteranno leggermente dorate in superficie.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779902188365",
+      "categoryLabel": "Secondi",
+      "title": "Zuppa wurstel e cipolle",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "15 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "40 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Acqua",
+          "qty": "560 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Wurstel bianchi",
+          "qty": "400 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Cipolle",
+          "qty": "5",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Aceto balsamico",
+          "qty": "5 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Spezie",
+          "qty": "q.b.",
+          "note": "Origano e paprika",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si comincia tagliando i wurstel a rondelle, facendoli arrostire per bene in padella per poi tenerli da parte.<br><br>Nella stessa padella, si fanno soffriggere le cipolle affettate con un filo d'olio, aggiungendo origano, paprika, sale e pepe per insaporire. Dopo circa 5 minuti di cottura, si sfuma con l'aceto balsamico e, una volta evaporato, si versano 100 g di acqua. Non appena anche questa sarà evaporata, si uniscono nuovamente i wurstel e si aumenta il fuoco per far saltare il tutto.<br><br>Infine, si va a deglassare il fondo della padella unendo una noce di burro e altri 100 g di acqua; una volta sciolto tutto il fondo di cottura, si aggiungono i restanti 360 g di acqua e si lascia insaporire e ridurre la zuppa a fuoco lento.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779902371912",
+      "categoryLabel": "Colazione",
+      "title": "Banotti",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "5 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "10 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Colazione",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Latte",
+          "qty": "100 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Banana",
+          "qty": "1",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Fiocchi di avena",
+          "qty": "50 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Burro d'arachidi",
+          "qty": "5 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "qty": "5 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "In un boccale si inseriscono la banana tagliata a pezzi e i fiocchi d'avena, iniziando poi a versare il latte ma poco alla volta, poiché potrebbe non servire tutto a seconda della consistenza desiderata.<br><br>Si aggiungono quindi il burro di arachidi e il lievito per dolci, frullando accuratamente il tutto con il minipimer fino a ottenere una crema che non sia eccessivamente liscia o fluida, ma densa e non troppo liquida; a questo punto si lascia riposare il composto per qualche minuto.<br><br>Infine, si scalda una padella antiaderente e si cuoce il composto a fuoco medio: non appena in superficie iniziano a comparire delle bollicine, si gira il pancake dall'altro lato e si completa la cottura.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": [
+        {
+          "text": "All'impasto potresti aggiungere della cannella!"
+        },
+        {
+          "text": "Decora con frutta, miele, yogurt..."
+        }
+      ]
+    },
+    {
+      "id": "recipe-1779902784314",
+      "categoryLabel": "Zuppe",
+      "title": "Zuppa di piselli spezzati",
+      "author": "Lu e Ciucio",
+      "meta": [
+        {
+          "label": "Porzioni",
+          "value": "2",
+          "isCat": false
+        },
+        {
+          "label": "ammollo",
+          "value": "8 ore",
+          "isCat": false
+        },
+        {
+          "label": "Preparazione",
+          "value": "5 min",
+          "isCat": false
+        },
+        {
+          "label": "cottura",
+          "value": "75 min",
+          "isCat": false
+        },
+        {
+          "label": "Categoria",
+          "value": "Secondi",
+          "isCat": true
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Piselli spezzati",
+          "qty": "500 g",
+          "note": "Split Peas 🇬🇧",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Brodo",
+          "qty": "1 l",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Pancetta",
+          "qty": "200 g",
+          "note": "",
+          "tags": [],
+          "group": ""
+        },
+        {
+          "name": "Soffritto",
+          "qty": "q.b.",
+          "note": "",
+          "tags": [],
+          "group": ""
+        }
+      ],
+      "procedure": "Si comincia tenendo a bagno i piselli spezzati per il tempo necessario a farli rinvenire (almeno una notte).<br><br>In una pentola capiente si versa un filo d'olio extravergine d'oliva e si mette a rosolare il soffritto misto, aggiungendo poi la pancetta a cubetti e infine i piselli scolati, facendoli saltare e insaporire per qualche minuto.<br><br>A questo punto si aggiunge il brodo bollente fino a coprire interamente gli ingredienti. Si copre con il coperchio e si lascia cuocere la zuppa per circa 1 ora a fuoco medio (mantenendo la temperatura sul livello 5).",
       "enjoy": "💙💜",
       "glossary": [],
       "tips": []
     }
   ],
-  "catOrder": ["Smoothie & Bevande", "Colazione", "Preparazioni di base", "Primi", "Secondi", "Dolci & Dessert", "Zuppe", "Altro"]
+  "catOrder": [
+    "Smoothie & Bevande",
+    "Colazione",
+    "Preparazioni di base",
+    "Primi",
+    "Secondi",
+    "Dolci & Dessert",
+    "Zuppe",
+    "Altro"
+  ]
 }
