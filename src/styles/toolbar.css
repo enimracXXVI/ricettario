@@ -1,0 +1,142 @@
+/* ── FORMAT TOOLBAR ──
+   Desktop: floats above the current text selection (mouse-friendly).
+   Mobile (<760px): docked as a sticky bar at the bottom of the viewport —
+   floating-near-selection fights the native text-selection handles on
+   touch browsers, so touch gets a fixed, always-reachable bar instead. */
+#fmt-toolbar {
+  position: fixed;
+  z-index: 300;
+  background: #071828;
+  border: 1px solid rgba(2, 178, 251, 0.3);
+  border-radius: 10px;
+  padding: 6px 8px;
+  display: none;
+  align-items: center;
+  gap: 2px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  overflow-x: auto;
+  max-width: calc(100vw - 16px);
+}
+#fmt-toolbar.visible {
+  display: flex;
+}
+.fmt-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #b9d6ee;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 7px;
+  line-height: 1.4;
+  min-width: 36px;
+  min-height: 36px;
+  flex-shrink: 0;
+}
+.fmt-btn:hover,
+.fmt-btn.active {
+  background: rgba(2, 178, 251, 0.18);
+  color: #fff;
+}
+.fmt-sep {
+  width: 1px;
+  height: 18px;
+  background: rgba(2, 178, 251, 0.25);
+  margin: 0 2px;
+  flex-shrink: 0;
+}
+.fmt-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.fmt-swatch:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 759px) {
+  #fmt-toolbar {
+    left: 0 !important;
+    right: 0;
+    bottom: 0;
+    top: auto !important;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px 14px 0 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 8px 10px calc(8px + var(--safe-b));
+    justify-content: flex-start;
+  }
+}
+
+/* ── LINK PANEL ── */
+#fmt-link-panel {
+  position: fixed;
+  z-index: 301;
+  background: #071828;
+  border: 1px solid rgba(2, 178, 251, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  width: 260px;
+  max-width: calc(100vw - 16px);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.6);
+}
+#fmt-link-panel.visible {
+  display: flex;
+}
+@media (max-width: 759px) {
+  #fmt-link-panel {
+    left: 8px !important;
+    right: 8px;
+    bottom: calc(64px + var(--safe-b)) !important;
+    top: auto !important;
+    width: auto;
+  }
+}
+.fmt-url-input {
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #d4eaff;
+  font-size: 13px;
+  outline: none;
+}
+.fmt-url-input:focus {
+  border-color: var(--cyan);
+}
+.fmt-link-recipes {
+  max-height: 160px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.fmt-link-option {
+  font-size: 12px;
+  padding: 7px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #d4eaff;
+  display: flex;
+  gap: 6px;
+}
+.fmt-link-option:hover {
+  background: rgba(2, 178, 251, 0.14);
+}
+.fmt-link-option-label {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--cyan);
+  font-size: 10px;
+  flex-shrink: 0;
+}

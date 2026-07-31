@@ -1,0 +1,40 @@
+{
+  "name": "Il mio Ricettario",
+  "short_name": "Ricettario",
+  "description": "Raccolta di ricette personali, con salvataggio diretto su GitHub.",
+  "start_url": "/ricettario/",
+  "scope": "/ricettario/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#020d1a",
+  "theme_color": "#020d1a",
+  "lang": "it",
+  "icons": [
+    { "src": "/ricettario/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/ricettario/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/ricettario/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuova ricetta",
+      "short_name": "Nuova",
+      "description": "Aggiungi una nuova ricetta",
+      "url": "/ricettario/#/?nuova=1",
+      "icons": [{ "src": "/ricettario/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Indice",
+      "short_name": "Indice",
+      "description": "Vai all'indice delle categorie",
+      "url": "/ricettario/#/",
+      "icons": [{ "src": "/ricettario/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Glossario",
+      "short_name": "Glossario",
+      "description": "Vai al glossario",
+      "url": "/ricettario/#/glossario",
+      "icons": [{ "src": "/ricettario/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

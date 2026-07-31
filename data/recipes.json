@@ -1,0 +1,207 @@
+{
+  "recipes": [
+    {
+      "id": "perbacco",
+      "categoryLabel": "Smoothie & Bevande",
+      "title": "Per’Bacco",
+      "author": "Lu e Ciucio",
+      "meta": [
+        { "label": "Porzioni", "value": "2", "isCat": false },
+        { "label": "Preparazione", "value": "7 min", "isCat": false },
+        { "label": "Frulla", "value": "59 sec", "isCat": false },
+        { "label": "Categoria", "value": "Smoothie", "isCat": true }
+      ],
+      "ingredients": [
+        { "name": "Acqua", "qty": "125 ml", "note": "Sostituibile con ghiaccio 🧊🧊🧊", "tags": [] },
+        { "name": "Limenta", "qty": "1 cubetto", "note": "", "tags": ["opzionale"] },
+        { "name": "Mela", "qty": "1", "note": "", "tags": [] },
+        { "name": "Arance", "qty": "2", "note": "", "tags": [] },
+        { "name": "Kiwi", "qty": "1", "note": "", "tags": [] },
+        { "name": "Uva", "qty": "250 g", "note": "", "tags": [] }
+      ],
+      "procedure": "Versa l’acqua nel frullatore — se preferisci usare il ghiaccio al suo posto, tienilo da parte e aggiungilo solo alla fine. Unisci la mela, le arance, il kiwi, l’uva e il cubetto di Limenta. Seleziona la modalità <strong>Smoothie&nbsp;→&nbsp;Smooth</strong> e avvia. Servi immediatamente.",
+      "enjoy": "💙💜",
+      "glossary": [
+        {
+          "term": "Limenta",
+          "def": "Un cubetto aromatico ottenuto frullando insieme succo e scorza di lime con foglie di menta fresca, quindi congelando il composto in stampi da ghiaccio. Si conserva in freezer per mesi e si aggiunge direttamente durante la frullatura, dove si scioglie rilasciando un aroma fresco e agrumato. Conviene prepararne una dose abbondante in anticipo."
+        }
+      ],
+      "tips": []
+    },
+    {
+      "id": "peanurt",
+      "categoryLabel": "Dolci & Dessert",
+      "title": "Peanurt",
+      "author": "Lu e Ciucio",
+      "meta": [
+        { "label": "Porzioni", "value": "2", "isCat": false },
+        { "label": "Preparazione", "value": "20 min", "isCat": false },
+        { "label": "Riposo", "value": "≈9 ore", "isCat": false },
+        { "label": "Categoria", "value": "Dolci", "isCat": true }
+      ],
+      "ingredients": [
+        { "name": "Yogurt", "qty": "100 g", "note": "", "tags": [] },
+        { "name": "Burro di arachidi", "qty": "90 g", "note": "", "tags": [] },
+        { "name": "Miele", "qty": "15 g", "note": "", "tags": [] },
+        { "name": "Cioccolato fondente", "qty": "20 g", "note": "", "tags": [] }
+      ],
+      "procedure": "Mescola lo yogurt con il burro di arachidi e il miele fino a ottenere un composto omogeneo. Versa negli stampi e lascia congelare per almeno 9 ore. Quando pronti, sciogli il cioccolato fondente nel microonde e versalo sul composto ancora freddo.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "chocoflash",
+      "categoryLabel": "Dolci & Dessert",
+      "title": "Chocoflash",
+      "author": "Lu e Ciucio",
+      "meta": [
+        { "label": "Porzioni", "value": "2", "isCat": false },
+        { "label": "Preparazione", "value": "5 min", "isCat": false },
+        { "label": "Cottura", "value": "5 min", "isCat": false },
+        { "label": "Categoria", "value": "Dolci", "isCat": true }
+      ],
+      "ingredients": [
+        { "name": "Latte", "qty": "300 ml", "note": "", "tags": [] },
+        { "name": "Cacao", "qty": "20 g", "note": "", "tags": [] },
+        { "name": "Zucchero vanigliato", "qty": "20 g", "note": "", "tags": [] },
+        { "name": "Maizena", "qty": "10 g", "note": "", "tags": [] }
+      ],
+      "procedure": "Setaccia tutte le polveri in una pentola e mescola con una frusta. Aggiungi un po’ di latte freddo per evitare i grumi, mescolando fino a ottenere una crema liscia. Scalda il restante latte e aggiungilo poco alla volta alla crema, incorporandolo completamente. Porta sul fuoco mescolando continuamente per evitare che si attacchi sul fondo, finché non raggiunge la densità preferita.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": [{ "text": "Aggiungi una spolverata di cannella... yummy!" }]
+    },
+    {
+      "id": "recipe-1779028997950",
+      "categoryLabel": "Smoothie & Bevande",
+      "title": "Melobevo",
+      "author": "Lu e Ciucio",
+      "meta": [
+        { "label": "Porzioni", "value": "2", "isCat": false },
+        { "label": "Preparazione", "value": "5 min", "isCat": false },
+        { "label": "Categoria", "value": "Smoothie", "isCat": true },
+        { "label": "FRULLA", "value": "59 sec", "isCat": false }
+      ],
+      "ingredients": [
+        { "name": "Acqua", "qty": "250 g", "note": "Sostituibile con ghiaccio 🧊🧊🧊", "tags": [] },
+        { "name": "Mela", "qty": "3", "note": "", "tags": [] },
+        { "name": "Zenzero", "qty": "15 g", "note": "", "tags": [] }
+      ],
+      "procedure": "Versa l’acqua nel frullatore — se preferisci usare il ghiaccio al suo posto, tienilo da parte e aggiungilo solo alla fine. Unisci la mela e lo zenzero. Seleziona la modalità <strong>Smoothie&nbsp;→&nbsp;Smooth</strong> e avvia. Servi immediatamente.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "recipe-1779029236398",
+      "categoryLabel": "Dolci & Dessert",
+      "title": "Cookiiiiiies",
+      "author": "Lu e Ciucio",
+      "meta": [
+        { "label": "Porzioni", "value": "2", "isCat": false },
+        { "label": "Preparazione", "value": "10 min", "isCat": false },
+        { "label": "Congelatore", "value": "30 min", "isCat": false },
+        { "label": "Cottura", "value": "10/15 min", "isCat": false },
+        { "label": "Categoria", "value": "Dolci", "isCat": true }
+      ],
+      "ingredients": [
+        { "name": "Zucchero", "qty": "100 g", "note": "", "tags": [] },
+        { "name": "Burro", "qty": "100 g", "note": "", "tags": [] },
+        { "name": "Uova", "qty": "1", "note": "", "tags": [] },
+        { "name": "Miele", "qty": "10 g", "note": "", "tags": [] },
+        { "name": "Lievito", "qty": "5 g", "note": "Per dolci!", "tags": [] },
+        { "name": "Farina", "qty": "300 g", "note": "", "tags": [] },
+        { "name": "Cioccolato", "qty": "50 g", "note": "", "tags": [] }
+      ],
+      "procedure": "",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": [{ "text": "Con un caffè ancora meglio! ☕" }]
+    },
+    {
+      "id": "recipe-1779031703412",
+      "categoryLabel": "Primi",
+      "title": "Risotto alla zucca",
+      "author": "",
+      "meta": [
+        { "label": "Porzioni", "value": "2", "isCat": false },
+        { "label": "Preparazione", "value": "10 min", "isCat": false },
+        { "label": "Cottura", "value": "40 min", "isCat": false },
+        { "label": "Categoria", "value": "Primi", "isCat": true }
+      ],
+      "ingredients": [
+        { "name": "Riso", "qty": "250 g", "note": "", "tags": [] },
+        { "name": "Zucca", "qty": "300 g", "note": "", "tags": [] },
+        { "name": "Grattugiato", "qty": "100 g", "note": "", "tags": [] },
+        { "name": "Brodo", "qty": "1 l", "note": "", "tags": [] },
+        { "name": "Cipolla", "qty": "1", "note": "", "tags": [] },
+        { "name": "Burro", "qty": "50 g", "note": "", "tags": ["Opzionale"] },
+        { "name": "Vino bianco", "qty": "100 g", "note": "", "tags": ["opzionale"] }
+      ],
+      "procedure": "Trita la cipolla e falla soffriggere, poi aggiungi la zucca a cubetti. Quando la zucca è morbida, unisci il riso e fallo tostare. Sfuma con il vino bianco, aggiungi il Brodo e fai cuocere per circa 20 minuti. Infine, manteca con il burro e il formaggio grattugiato.",
+      "enjoy": "💙💜",
+      "glossary": [
+        {
+          "term": "Brodo",
+          "def": "Se non vuoi usare il dado, prepara il brodo vegetale con acqua e spezie: aglio, cipolla, curry, pepe, paprika, erba cipollina. Oppure usa del brodo già pronto."
+        }
+      ],
+      "tips": []
+    },
+    {
+      "id": "casatiello",
+      "categoryLabel": "Altro",
+      "title": "Casatiello",
+      "author": "",
+      "meta": [
+        { "label": "Porzioni", "value": "2", "isCat": false },
+        { "label": "Preparazione", "value": "30 min", "isCat": false },
+        { "label": "Lievitazione", "value": "≈3 ore", "isCat": false },
+        { "label": "Cottura", "value": "65 min", "isCat": false },
+        { "label": "Categoria", "value": "Altro", "isCat": true }
+      ],
+      "ingredients": [
+        { "name": "Acqua", "qty": "375 g", "note": "A temperatura ambiente", "tags": [] },
+        { "name": "Farina 00", "qty": "650 g", "note": "", "tags": [] },
+        { "name": "Lievito in polvere", "qty": "7 g", "note": "", "tags": [] },
+        { "name": "Olio d’oliva", "qty": "25 g", "note": "", "tags": [] },
+        { "name": "Strutto", "qty": "110 g", "note": "", "tags": [] },
+        { "name": "Sale", "qty": "15 g", "note": "", "tags": [] },
+        { "name": "Pepe", "qty": "4 g", "note": "", "tags": [] },
+        { "name": "Zucchero", "qty": "5 g", "note": "", "tags": [] },
+        { "name": "Provolone dolce", "qty": "140 g", "note": "", "tags": [] },
+        { "name": "Pecorino / Asiago", "qty": "140 g", "note": "", "tags": [] },
+        { "name": "Salame", "qty": "230 g", "note": "", "tags": [] },
+        { "name": "Uova", "qty": "6", "note": "", "tags": [] }
+      ],
+      "procedure": "Aggiungi il lievito all’acqua a temperatura ambiente e mescola poi olio, metà strutto e amalgama il tutto.<br>Aggiungi la farina setacciata poco alla volta fino a ottenere una pastella alla quale aggiungi sale e pepe.<br>Aggiungi l’altra metà della farina e dello strutto e impasta almeno per 10 minuti.<br>Fai crescere l’impasto coperto per qualche ora.<br>Taglia tutto il ripieno a cubetti, stendi l’impasto a forma rettangolare e metti gli ingredienti.<br>Chiudi formando una girella, metti nella teglia leggermente struttata e fai crescere per almeno 1 ora.<br>Cuoci a forno statico a 170° sul ripiano più basso per circa 65 minuti.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    },
+    {
+      "id": "besciamella",
+      "categoryLabel": "Preparazioni di base",
+      "title": "Besciamella",
+      "author": "",
+      "meta": [
+        { "label": "Resa", "value": "1 litro", "isCat": false },
+        { "label": "Preparazione", "value": "15 min", "isCat": false },
+        { "label": "Cottura", "value": "8 min", "isCat": false },
+        { "label": "Categoria", "value": "Base", "isCat": true }
+      ],
+      "ingredients": [
+        { "name": "Burro", "qty": "100 g", "note": "", "tags": [] },
+        { "name": "Farina 00", "qty": "100 g", "note": "", "tags": [] },
+        { "name": "Latte intero", "qty": "1 l", "note": "", "tags": [] }
+      ],
+      "procedure": "Fai sciogliere il burro in un pentolino. Toglilo dal fuoco, aggiungi la farina setacciata e mescola per non fare formare grumi. Rimetti sul fuoco finché non diventa dorato.<br>Riscalda il latte, aggiungine un po’ per stemperare il fondo e poi il resto. Fai cuocere a fuoco dolce per 5–6 minuti.<br>Aggiusta di sale e noce moscata.",
+      "enjoy": "💙💜",
+      "glossary": [],
+      "tips": []
+    }
+  ],
+  "catOrder": ["Smoothie & Bevande", "Colazione", "Preparazioni di base", "Primi", "Secondi", "Dolci & Dessert", "Zuppe", "Altro"]
+}
