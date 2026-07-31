@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import QRCode from 'qrcode';
 import { useApp } from '../context/AppContext';
-import { REPO_NAME, REPO_OWNER } from '../config';
 import { useEscapeToClose } from '../lib/useEscapeToClose';
 import { useBodyScrollLock } from '../lib/useBodyScrollLock';
 
@@ -50,31 +49,26 @@ export function TokenModal({ open, onClose }) {
   return (
     <div className="modal-overlay open" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
       <div className="modal-box">
-        <div className="modal-title">Accesso a GitHub</div>
-        <p className="modal-help">
-          Per salvare le modifiche serve un Personal Access Token (fine-grained) con accesso in scrittura al solo
-          repository <strong>{REPO_OWNER}/{REPO_NAME}</strong>. Va aggiunto una volta per dispositivo/browser — resta
-          salvato solo in locale.
-          <br />
-          <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">
-            Crea un token su GitHub →
-          </a>{' '}
-          (permesso richiesto: <em>Contents: Read and write</em>, limitato a questo repository).
-        </p>
+        <div className="modal-title">Impostazioni</div>
+
+        <div className="modal-field">
+          <span className="modal-label">Stato attuale</span>
+          <span className={`badge ${hasToken ? 'badge-ok' : 'badge-off'}`}>
+            {hasToken ? 'Configurato' : 'Non configurato'}
+          </span>
+        </div>
 
         {hasToken && (
           <div className="modal-field">
-            <span className="modal-label">Stato attuale</span>
-            <p style={{ fontSize: 13, marginBottom: 10 }}>Un token è già salvato su questo dispositivo.</p>
             <button type="button" className="btn btn-outline btn-block" onClick={handleShowQr}>
-              {qrUrl ? 'Nascondi QR' : 'Mostra come QR per un altro dispositivo'}
+              {qrUrl ? 'Nascondi QR' : 'Mostra QR'}
             </button>
             {qrUrl && (
               <div style={{ textAlign: 'center', marginTop: 12 }}>
                 <img src={qrUrl} alt="QR del token" width={240} height={240} style={{ borderRadius: 10 }} />
                 <p style={{ fontSize: 11, color: 'var(--muted)', marginTop: 8 }}>
-                  Inquadra con la fotocamera dell'altro dispositivo: di solito propone di copiare il testo — poi
-                  tienilo premuto sul campo qui sotto e scegli "Incolla". Non condividere questo QR pubblicamente.
+                  Inquadra con la fotocamera dell'altro dispositivo, poi tienilo premuto sul campo qui sotto e
+                  scegli "Incolla". Non condividere questo QR pubblicamente.
                 </p>
               </div>
             )}
@@ -90,14 +84,22 @@ export function TokenModal({ open, onClose }) {
             type="password"
             autoComplete="off"
             className="modal-input"
-            placeholder="github_pat_… (tieni premuto per incollare)"
+            placeholder="Inserisci qui il token"
             value={value}
             onChange={(e) => setValue(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSave()}
           />
+          <a
+            className="modal-inline-link"
+            href="https://github.com/settings/personal-access-tokens/new"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Crea un token su GitHub →
+          </a>
         </div>
         {error && <div className="modal-error">{error}</div>}
-        <div className="modal-actions">
+        <div className="modal-actions modal-actions-row">
           {hasToken && (
             <button
               type="button"
@@ -108,14 +110,14 @@ export function TokenModal({ open, onClose }) {
                 showToast('Token rimosso da questo dispositivo');
               }}
             >
-              Rimuovi token
+              Rimuovi
             </button>
           )}
           <button type="button" className="btn btn-ghost" onClick={onClose}>
             Chiudi
           </button>
           <button type="button" className="btn btn-primary" disabled={checking || !value.trim()} onClick={handleSave}>
-            {checking ? 'Verifico…' : 'Verifica e salva'}
+            {checking ? 'Verifico…' : 'Salva'}
           </button>
         </div>
       </div>

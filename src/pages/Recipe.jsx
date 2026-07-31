@@ -1,7 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { RichTextEditor } from '../components/RichTextEditor';
+import { ConfirmModal } from '../components/ConfirmModal';
 import { applyGlossLinks, buildGlossMap, findGlossaryEntry } from '../lib/glossary';
 import { moveItem } from '../lib/util';
 
@@ -13,6 +14,7 @@ export function Recipe() {
   const navigate = useNavigate();
   const rid = data.recipes.findIndex((r) => r.id === id);
   const recipe = rid >= 0 ? data.recipes[rid] : null;
+  const [confirmDeleteOpen, setConfirmDeleteOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -54,7 +56,7 @@ export function Recipe() {
     const label = window.prompt('Nome del campo:');
     if (label === null) return;
     updateRecipe((r) => {
-      r.meta = [...r.meta, { label: label || 'Campo', value: '—', isCat: false }];
+      r.meta = [...r.meta, { label: label || 'Campo', value: '', isCat: false }];
     });
   }
   function removeChip(ci) {
@@ -75,7 +77,7 @@ export function Recipe() {
   }
   function addIngredient() {
     updateRecipe((r) => {
-      r.ingredients = [...r.ingredients, { name: 'Ingrediente', qty: '—', note: '', tags: [], group: '' }];
+      r.ingredients = [...r.ingredients, { name: '', qty: '', note: '', tags: [], group: '' }];
     });
   }
   function removeIngredient(iid) {
@@ -101,7 +103,7 @@ export function Recipe() {
 
   function addTip() {
     updateRecipe((r) => {
-      r.tips = [...(r.tips || []), { text: 'Suggerimento...' }];
+      r.tips = [...(r.tips || []), { text: '' }];
     });
   }
   function updateTip(ti, text) {
@@ -120,9 +122,9 @@ export function Recipe() {
     });
   }
 
-  function deleteRecipe() {
-    if (!window.confirm(`Eliminare "${recipe.title}"?`)) return;
+  function confirmDeleteRecipe() {
     setData((prev) => ({ ...prev, recipes: prev.recipes.filter((_, i) => i !== rid) }));
+    setConfirmDeleteOpen(false);
     navigate('/');
   }
 
@@ -157,13 +159,14 @@ export function Recipe() {
   let lastGroup = null;
 
   return (
+    <>
     <section className="section">
       <div className="recipe-crumb">
         <Link to="/" className="recipe-back">
           ← Indice
         </Link>
         {editing && (
-          <button className="del-recipe-btn" style={{ marginBottom: 0 }} onClick={deleteRecipe}>
+          <button className="del-recipe-btn" style={{ marginBottom: 0 }} onClick={() => setConfirmDeleteOpen(true)}>
             Elimina ricetta
           </button>
         )}
@@ -205,7 +208,12 @@ export function Recipe() {
             {editing ? (
               <>
                 <input className="chip-label-input" value={c.label} onChange={(e) => updateChip(ci, 'label', e.target.value)} />
-                <input className={`chip-val-input${c.isCat ? ' is-cat' : ''}`} value={c.value} onChange={(e) => updateChip(ci, 'value', e.target.value)} />
+                <input
+                  className={`chip-val-input${c.isCat ? ' is-cat' : ''}`}
+                  placeholder="Valore"
+                  value={c.value}
+                  onChange={(e) => updateChip(ci, 'value', e.target.value)}
+                />
                 <button className="chip-del" onClick={() => removeChip(ci)}>
                   ×
                 </button>
@@ -274,7 +282,12 @@ export function Recipe() {
                       )}
                       <div className="ing-top">
                         {editing ? (
-                          <input className="ing-name-input" value={ing.name} onChange={(e) => updateIngredient(iid, 'name', e.target.value)} />
+                          <input
+                            className="ing-name-input"
+                            placeholder="Nome ingrediente"
+                            value={ing.name}
+                            onChange={(e) => updateIngredient(iid, 'name', e.target.value)}
+                          />
                         ) : (
                           <span className="ing-name" dangerouslySetInnerHTML={{ __html: applyGlossLinks(ing.name, gMap) }} />
                         )}
@@ -316,7 +329,12 @@ export function Recipe() {
                       )}
                     </div>
                     {editing ? (
-                      <input className="ing-qty-input" value={ing.qty} onChange={(e) => updateIngredient(iid, 'qty', e.target.value)} />
+                      <input
+                        className="ing-qty-input"
+                        placeholder="Quantità"
+                        value={ing.qty}
+                        onChange={(e) => updateIngredient(iid, 'qty', e.target.value)}
+                      />
                     ) : (
                       <span className="ing-qty">{ing.qty}</span>
                     )}
@@ -366,7 +384,12 @@ export function Recipe() {
               <div className="tip-entry-content">
                 <div className="tip-label">Suggerimento</div>
                 {editing ? (
-                  <input className="tip-text-input" value={t.text} onChange={(e) => updateTip(ti, e.target.value)} />
+                  <input
+                    className="tip-text-input"
+                    placeholder="Scrivi un suggerimento..."
+                    value={t.text}
+                    onChange={(e) => updateTip(ti, e.target.value)}
+                  />
                 ) : (
                   <p className="tip-text">{t.text}</p>
                 )}
@@ -415,5 +438,14 @@ export function Recipe() {
         )}
       </div>
     </section>
+    <ConfirmModal
+      open={confirmDeleteOpen}
+      title="Eliminare la ricetta?"
+      message={`"${recipe.title}" verrà rimossa definitivamente. L'operazione non è reversibile finché non salvi — puoi ancora annullare tutta la modifica prima di salvare.`}
+      confirmLabel="Elimina"
+      onConfirm={confirmDeleteRecipe}
+      onCancel={() => setConfirmDeleteOpen(false)}
+    />
+    </>
   );
 }

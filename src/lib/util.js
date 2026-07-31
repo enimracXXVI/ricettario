@@ -18,10 +18,10 @@ export function emptyRecipe(id, title, categoryLabel) {
     author: '',
     meta: [
       { label: 'Porzioni', value: '2', isCat: false },
-      { label: 'Preparazione', value: '—', isCat: false },
-      { label: 'Categoria', value: categoryLabel.split(' ')[0], isCat: true },
+      { label: 'Preparazione', value: '', isCat: false },
+      { label: 'Categoria', value: categoryLabel, isCat: true },
     ],
-    ingredients: [{ name: 'Ingrediente', qty: '—', note: '', tags: [], group: '' }],
+    ingredients: [{ name: '', qty: '', note: '', tags: [], group: '' }],
     procedure: '',
     enjoy: '💙💜',
     glossary: [],

@@ -58,7 +58,7 @@ export function Glossary() {
     setData((prev) => {
       const recipes = prev.recipes.slice();
       const target = { ...recipes[0] };
-      target.glossary = [...(target.glossary || []), { term: 'Termine', def: 'Definizione...' }];
+      target.glossary = [...(target.glossary || []), { term: '', def: '' }];
       recipes[0] = target;
       return { ...prev, recipes };
     });
@@ -99,7 +99,12 @@ export function Glossary() {
             )}
             <div className="gloss-entry-content">
               {editing ? (
-                <input className="gloss-term-input" value={g.term} onChange={(e) => updateEntry(rid, gi, 'term', e.target.value)} />
+                <input
+                  className="gloss-term-input"
+                  placeholder="Termine"
+                  value={g.term}
+                  onChange={(e) => updateEntry(rid, gi, 'term', e.target.value)}
+                />
               ) : (
                 <div className="gloss-term">{g.term}</div>
               )}
@@ -109,6 +114,7 @@ export function Glossary() {
                 editing={editing}
                 value={g.def}
                 onChange={(html) => updateEntry(rid, gi, 'def', html)}
+                placeholder="Definizione..."
               />
               {uses.length > 0 && (
                 <div className="gloss-used-in">

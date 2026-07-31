@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ricettario — Guida di stile</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cyan: #02b2fb;
+  --magenta: #ff00aa;
+  --lime: #9cfe00;
+  --bg: #020d1a;
+  --card: #071b2e;
+  --card2: #0a2240;
+  --text: #d4eaff;
+  --muted: rgba(212, 234, 255, 0.42);
+  --border: rgba(2, 178, 251, 0.13);
+  --nav-bg: rgba(2, 13, 26, 0.92);
+  --modal-bg: #071828;
+  --modal-brd: rgba(255, 0, 170, 0.3);
+  --overlay-bg: rgba(2, 13, 26, 0.88);
+  --gloss-term-color: var(--lime);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  padding: 24px 20px 100px;
+}
+.wrap { max-width: 1040px; margin: 0 auto; }
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 52px;
+  color: var(--cyan);
+  margin-bottom: 4px;
+}
+.subtitle { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--magenta);
+  margin: 56px 0 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+h2:first-of-type { margin-top: 0; }
+.section-desc { color: var(--muted); font-size: 13px; margin-bottom: 20px; max-width: 640px; }
+
+/* ── COLOR SWATCHES ── */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.swatch-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.swatch-fill { height: 72px; }
+.swatch-body { padding: 12px 14px; }
+.swatch-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.swatch-val {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  background: var(--card2);
+  border-radius: 6px;
+  padding: 5px 8px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+.swatch-val:hover { background: var(--border); color: var(--text); }
+.swatch-val.copied { background: var(--lime); color: #010c10; }
+.swatch-val .copy-hint { opacity: 0.5; font-size: 9px; }
+
+/* ── BUTTON REFERENCE (copied 1:1 from the app's theme.css) ── */
+.btn {
+  font-family: 'Syne', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s, transform 0.1s;
+  min-height: 40px;
+}
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.btn-outline { background: var(--card2); border: 1px solid var(--border); color: var(--cyan); }
+.btn-outline:hover { border-color: var(--cyan); }
+.btn-primary { background: var(--magenta); color: #fff; }
+.btn-primary:hover { opacity: 0.88; }
+.btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--muted); }
+.btn-ghost:hover { color: var(--text); border-color: var(--muted); }
+.btn-lime { background: var(--card2); border: 1px solid rgba(156, 254, 0, 0.35); color: var(--lime); }
+.btn-lime:hover { border-color: var(--lime); }
+.btn-danger { background: transparent; border: 1px solid rgba(255, 0, 170, 0.35); color: var(--magenta); }
+.btn-danger-solid { background: var(--magenta); color: #fff; }
+.btn-danger-solid:hover { opacity: 0.88; }
+.btn-theme {
+  background: transparent; border: 1px solid var(--border); color: var(--muted);
+  border-radius: 8px; width: 40px; height: 40px; font-size: 16px; cursor: pointer;
+}
+.btn-theme:hover { border-color: var(--cyan); color: var(--text); }
+
+/* Forced-state demo classes (mirror the real :hover/:active/:disabled look so
+   every state is visible side by side, without needing to interact). */
+.demo-hover.btn-outline { border-color: var(--cyan); }
+.demo-hover.btn-ghost { color: var(--text); border-color: var(--muted); }
+.demo-hover.btn-primary,
+.demo-hover.btn-danger-solid { opacity: 0.88; }
+.demo-hover.btn-lime { border-color: var(--lime); }
+.demo-hover.btn-theme { border-color: var(--cyan); color: var(--text); }
+.demo-active { transform: scale(0.97); }
+.demo-disabled { opacity: 0.5; }
+
+.button-block {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+}
+.button-block-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.button-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--cyan);
+}
+.button-purpose { font-size: 12px; color: var(--muted); }
+.state-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.state-cell { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.state-label {
+  font-family: 'Syne', sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+}
+.state-hint { font-size: 11px; color: var(--muted); margin-top: 10px; }
+
+/* ── TYPE + MISC ── */
+.type-sample { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+.type-label { font-size: 11px; color: var(--muted); margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; }
+.f-caveat { font-family: 'Caveat', cursive; font-size: 34px; color: var(--magenta); }
+.f-syne { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: var(--cyan); }
+.f-dmsans { font-family: 'DM Sans', sans-serif; font-size: 15px; }
+.f-mono { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--cyan); }
+
+.badge { display: inline-flex; align-items: center; font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-radius: 20px; }
+.badge-ok { background: rgba(156, 254, 0, 0.16); color: var(--lime); border: 1px solid rgba(156, 254, 0, 0.35); }
+.badge-off { background: var(--card2); color: var(--muted); border: 1px solid var(--border); }
+
+.toast-note {
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  background: var(--lime); color: #010c10; font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1px; padding: 10px 18px; border-radius: 8px;
+  opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 50;
+}
+.toast-note.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Il mio Ricettario</h1>
+  <p class="subtitle">Guida di stile — non collegata alla nav dell'app, riferimento per lo sviluppo. Genera i colori "chiaro" cambiando tema qui sotto.</p>
+
+  <h2>Colori — tema scuro</h2>
+  <p class="section-desc">Tocca un valore per copiarlo negli appunti.</p>
+  <div id="dark-swatches" class="swatch-grid"></div>
+
+  <h2>Colori — tema chiaro</h2>
+  <p class="section-desc">Le variabili sovrascritte quando <code>body.light</code> è attivo.</p>
+  <div id="light-swatches" class="swatch-grid"></div>
+
+  <h2>Tipografia</h2>
+  <div class="type-sample">
+    <div class="type-label">Caveat — titoli ricetta, brand, glossario</div>
+    <div class="f-caveat">Il mio Ricettario</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-label">Syne — eyebrow, etichette, pulsanti</div>
+    <div class="f-syne">Ingredienti</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-label">DM Sans — testo corrente</div>
+    <div class="f-dmsans">Versa l'acqua nel frullatore, unisci la mela e il kiwi.</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-label">JetBrains Mono — quantità, valori numerici</div>
+    <div class="f-mono">125 ml · 7 min</div>
+  </div>
+
+  <h2>Pulsanti</h2>
+  <p class="section-desc">Ogni riquadro mostra a cosa serve il pulsante e i suoi stati: inattivo, al passaggio del mouse, premuto, disabilitato. I pulsanti sono anche realmente interattivi — passaci sopra o clicca per sentirli dal vivo.</p>
+  <div id="buttons"></div>
+
+  <h2>Badge</h2>
+  <p class="section-desc">Stato compatto (es. token configurato/non configurato nel pannello Impostazioni).</p>
+  <div class="button-block">
+    <div class="state-row">
+      <div class="state-cell"><span class="state-label">Positivo</span><span class="badge badge-ok">Configurato</span></div>
+      <div class="state-cell"><span class="state-label">Neutro</span><span class="badge badge-off">Non configurato</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-note" id="toast">Copiato ✓</div>
+
+<script>
+const DARK = {
+  '--cyan': '#02b2fb', '--magenta': '#ff00aa', '--lime': '#9cfe00',
+  '--bg': '#020d1a', '--card': '#071b2e', '--card2': '#0a2240',
+  '--text': '#d4eaff', '--muted': 'rgba(212, 234, 255, 0.42)',
+  '--border': 'rgba(2, 178, 251, 0.13)', '--nav-bg': 'rgba(2, 13, 26, 0.92)',
+  '--modal-bg': '#071828', '--modal-brd': 'rgba(255, 0, 170, 0.3)',
+  '--overlay-bg': 'rgba(2, 13, 26, 0.88)', '--gloss-term-color': '#9cfe00',
+};
+const LIGHT = {
+  '--bg': '#f5f7fc', '--card': '#ffffff', '--card2': '#e8eef6',
+  '--text': '#1a2a3a', '--muted': 'rgba(26, 42, 58, 0.52)',
+  '--border': 'rgba(2, 178, 251, 0.22)', '--nav-bg': 'rgba(245, 247, 252, 0.96)',
+  '--modal-bg': '#ffffff', '--modal-brd': 'rgba(255, 0, 170, 0.35)',
+  '--overlay-bg': 'rgba(0, 20, 50, 0.55)', '--gloss-term-color': '#2a7a00',
+};
+
+function parseColor(str) {
+  str = str.trim();
+  if (str.startsWith('#')) {
+    let h = str.slice(1);
+    if (h.length === 3) h = h.split('').map((c) => c + c).join('');
+    const r = parseInt(h.slice(0, 2), 16), g = parseInt(h.slice(2, 4), 16), b = parseInt(h.slice(4, 6), 16);
+    return { r, g, b, a: 1 };
+  }
+  const m = str.match(/rgba?\(([^)]+)\)/);
+  if (m) {
+    const [r, g, b, a = 1] = m[1].split(',').map((s) => parseFloat(s));
+    return { r, g, b, a };
+  }
+  return null;
+}
+function toHex(c) {
+  const h = (n) => Math.round(n).toString(16).padStart(2, '0');
+  return '#' + h(c.r) + h(c.g) + h(c.b) + (c.a < 1 ? h(c.a * 255) : '');
+}
+function toRgb(c) {
+  return c.a < 1 ? `rgba(${Math.round(c.r)}, ${Math.round(c.g)}, ${Math.round(c.b)}, ${c.a})` : `rgb(${Math.round(c.r)}, ${Math.round(c.g)}, ${Math.round(c.b)})`;
+}
+
+function copy(text, el) {
+  navigator.clipboard.writeText(text).then(() => {
+    el.classList.add('copied');
+    setTimeout(() => el.classList.remove('copied'), 500);
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => toast.classList.remove('show'), 1400);
+  });
+}
+
+function renderSwatches(containerId, tokens) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = Object.entries(tokens).map(([name, val]) => {
+    const c = parseColor(val);
+    const hex = c ? toHex(c) : val;
+    const rgb = c ? toRgb(c) : val;
+    const fillColor = c && c.a < 1 ? `rgba(${c.r},${c.g},${c.b},${Math.max(c.a, 0.35)})` : val;
+    return `
+      <div class="swatch-card">
+        <div class="swatch-fill" style="background:${fillColor.startsWith('rgba') || fillColor.startsWith('#') ? fillColor : val}"></div>
+        <div class="swatch-body">
+          <div class="swatch-name">${name}</div>
+          <button class="swatch-val" data-copy="${hex}"><span>${hex}</span><span class="copy-hint">HEX</span></button>
+          <button class="swatch-val" data-copy="${rgb}"><span>${rgb}</span><span class="copy-hint">RGB</span></button>
+        </div>
+      </div>`;
+  }).join('');
+  el.querySelectorAll('.swatch-val').forEach((btn) => {
+    btn.addEventListener('click', () => copy(btn.dataset.copy, btn));
+  });
+}
+renderSwatches('dark-swatches', DARK);
+renderSwatches('light-swatches', LIGHT);
+
+const BUTTONS = [
+  { cls: 'btn-primary', label: 'Salva', name: '.btn-primary', purpose: 'Azione principale/positiva: salvare, confermare (Salva, Verifica e salva).' },
+  { cls: 'btn-outline', label: 'Modifica', name: '.btn-outline', purpose: 'Azione secondaria di default: entrare in modifica, aprire un modale.' },
+  { cls: 'btn-ghost', label: 'Annulla', name: '.btn-ghost', purpose: 'Azione terziaria/di uscita: annullare, chiudere senza agire.' },
+  { cls: 'btn-lime', label: 'Scarica', name: '.btn-lime', purpose: 'Accento positivo alternativo, usato con parsimonia.' },
+  { cls: 'btn-danger', label: 'Rimuovi', name: '.btn-danger', purpose: 'Azione distruttiva secondaria (outline): rimuovere un token.' },
+  { cls: 'btn-danger-solid', label: 'Elimina', name: '.btn-danger-solid', purpose: 'Azione distruttiva da confermare esplicitamente (modale di conferma).' },
+];
+
+document.getElementById('buttons').innerHTML = BUTTONS.map((b) => `
+  <div class="button-block">
+    <div class="button-block-head">
+      <span class="button-name">${b.name}</span>
+      <span class="button-purpose">${b.purpose}</span>
+    </div>
+    <div class="state-row">
+      <div class="state-cell"><span class="state-label">Inattivo</span><button class="btn ${b.cls}">${b.label}</button></div>
+      <div class="state-cell"><span class="state-label">Hover</span><button class="btn ${b.cls} demo-hover">${b.label}</button></div>
+      <div class="state-cell"><span class="state-label">Premuto</span><button class="btn ${b.cls} demo-active">${b.label}</button></div>
+      <div class="state-cell"><span class="state-label">Disabilitato</span><button class="btn ${b.cls} demo-disabled" disabled>${b.label}</button></div>
+      <div class="state-cell"><span class="state-label">Prova dal vivo →</span><button class="btn ${b.cls}">${b.label}</button></div>
+    </div>
+  </div>`).join('') + `
+  <div class="button-block">
+    <div class="button-block-head">
+      <span class="button-name">.btn-theme</span>
+      <span class="button-purpose">Pulsante icona: cambio tema, impostazioni.</span>
+    </div>
+    <div class="state-row">
+      <div class="state-cell"><span class="state-label">Inattivo</span><button class="btn-theme">☀️</button></div>
+      <div class="state-cell"><span class="state-label">Hover</span><button class="btn-theme demo-hover">☀️</button></div>
+      <div class="state-cell"><span class="state-label">Prova dal vivo →</span><button class="btn-theme">⚙️</button></div>
+    </div>
+  </div>`;
+</script>
+</body>
+</html>

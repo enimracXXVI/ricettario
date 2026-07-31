@@ -21,8 +21,22 @@ function NavLinks({ onNavigate }) {
   );
 }
 
-function NavActions({ onOpenSettings, onNewRecipe, onNavigate }) {
-  const { theme, toggleTheme, editing, hasToken, startEditing, cancelEditing, save, saving } = useApp();
+function IconButtons({ onOpenSettings }) {
+  const { theme, toggleTheme } = useApp();
+  return (
+    <>
+      <button className="btn-theme" onClick={toggleTheme} title="Cambia tema">
+        {theme === 'light' ? '🌙' : '☀️'}
+      </button>
+      <button className="btn-theme" onClick={onOpenSettings} title="Impostazioni">
+        ⚙️
+      </button>
+    </>
+  );
+}
+
+function PrimaryActions({ onOpenSettings, onNewRecipe, onNavigate }) {
+  const { editing, hasToken, startEditing, cancelEditing, save, saving } = useApp();
 
   function handleModifica() {
     if (!hasToken) {
@@ -33,51 +47,45 @@ function NavActions({ onOpenSettings, onNewRecipe, onNavigate }) {
     onNavigate();
   }
 
+  if (!editing) {
+    return (
+      <button className="btn btn-outline" onClick={handleModifica}>
+        Modifica
+      </button>
+    );
+  }
+
   return (
-    <div className="nav-actions">
-      <button className="btn-theme" onClick={toggleTheme} title="Cambia tema">
-        {theme === 'light' ? '🌙' : '☀️'}
+    <>
+      <button
+        className="btn btn-outline"
+        onClick={() => {
+          onNewRecipe();
+          onNavigate();
+        }}
+      >
+        + Ricetta
       </button>
-      <button className="btn-theme" onClick={onOpenSettings} title="Impostazioni">
-        ⚙️
+      <button
+        className="btn btn-ghost"
+        onClick={() => {
+          cancelEditing();
+          onNavigate();
+        }}
+      >
+        Annulla
       </button>
-      {editing ? (
-        <>
-          <button
-            className="btn btn-outline"
-            onClick={() => {
-              onNewRecipe();
-              onNavigate();
-            }}
-          >
-            + Ricetta
-          </button>
-          <button
-            className="btn btn-ghost"
-            onClick={() => {
-              cancelEditing();
-              onNavigate();
-            }}
-          >
-            Annulla
-          </button>
-          <button
-            className="btn btn-primary"
-            disabled={saving}
-            onClick={() => {
-              save();
-              onNavigate();
-            }}
-          >
-            {saving ? 'Salvo…' : 'Salva'}
-          </button>
-        </>
-      ) : (
-        <button className="btn btn-outline" onClick={handleModifica}>
-          Modifica
-        </button>
-      )}
-    </div>
+      <button
+        className="btn btn-primary"
+        disabled={saving}
+        onClick={() => {
+          save();
+          onNavigate();
+        }}
+      >
+        {saving ? 'Salvo…' : 'Salva'}
+      </button>
+    </>
   );
 }
 
@@ -100,7 +108,10 @@ export function NavBar({ onNewRecipe, onOpenSettings }) {
         {/* Desktop: plain inline bar, always visible via CSS at wider widths. */}
         <div className="nav-menu">
           <NavLinks onNavigate={() => {}} />
-          <NavActions onOpenSettings={onOpenSettings} onNewRecipe={onNewRecipe} onNavigate={() => {}} />
+          <div className="nav-actions">
+            <IconButtons onOpenSettings={onOpenSettings} />
+            <PrimaryActions onOpenSettings={onOpenSettings} onNewRecipe={onNewRecipe} onNavigate={() => {}} />
+          </div>
         </div>
       </div>
 
@@ -113,11 +124,16 @@ export function NavBar({ onNewRecipe, onOpenSettings }) {
           <>
             <div className="nav-backdrop" onClick={close} />
             <div className="nav-drawer">
-              <button className="nav-drawer-close" aria-label="Chiudi menu" onClick={close}>
-                ✕
-              </button>
+              <div className="nav-drawer-header">
+                <IconButtons onOpenSettings={onOpenSettings} />
+                <button className="nav-drawer-close" aria-label="Chiudi menu" onClick={close}>
+                  ✕
+                </button>
+              </div>
               <NavLinks onNavigate={close} />
-              <NavActions onOpenSettings={onOpenSettings} onNewRecipe={onNewRecipe} onNavigate={close} />
+              <div className="nav-actions">
+                <PrimaryActions onOpenSettings={onOpenSettings} onNewRecipe={onNewRecipe} onNavigate={close} />
+              </div>
             </div>
           </>,
           document.body

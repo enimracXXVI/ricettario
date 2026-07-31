@@ -649,6 +649,11 @@ body.light .ing-row {
   border-color: var(--cyan);
   background: rgba(2, 178, 251, 0.04);
 }
+.rte[contenteditable]:empty:before {
+  content: attr(data-placeholder);
+  color: var(--muted);
+  pointer-events: none;
+}
 
 /* ── TIPS ── */
 .tips-section {
